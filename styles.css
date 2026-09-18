@@ -48,7 +48,7 @@ body {
   }
   to {
     opacity: 1;
-    max-height: 2000px;
+    max-height: 2500px;
   }
 }
 
@@ -149,6 +149,57 @@ body {
   box-shadow: 0 0 0 3px rgba(0, 92, 138, 0.15), 0 8px 20px rgba(0, 92, 138, 0.12);
 }
 
+/* Checkbox Card Coactiva */
+.coactiva-check-card {
+  transition: all 0.2s ease;
+  border: 2px solid #E2E8F0;
+  cursor: pointer;
+}
+
+.coactiva-check-card:hover {
+  border-color: #94A3B8;
+  background-color: #F8FAFC;
+}
+
+.coactiva-check-card.checked {
+  border-color: #005C8A;
+  background-color: #F0F9FF;
+  box-shadow: 0 0 0 2px rgba(0, 92, 138, 0.12);
+}
+
+/* Declaración Legal Precargada */
+.declaracion-legal-box {
+  background-color: #F8FAFC;
+  border-left: 4px solid #002855;
+  padding: 0.85rem 1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #1E293B;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Hoja Formal para el Oficio Oficial */
+.oficio-papel {
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  position: relative;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #111827;
+}
+
+.oficio-header-line {
+  height: 3px;
+  background: linear-gradient(90deg, #FDC300 0%, #DA291C 50%, #002855 100%);
+}
+
+.firma-line {
+  border-bottom: 1.5px solid #1E293B;
+  width: 250px;
+  display: inline-block;
+}
+
 /* Scrollbar personalizado */
 ::-webkit-scrollbar {
   width: 8px;
@@ -167,18 +218,24 @@ body {
 
 /* ==========================================================================
    ESTILOS DE IMPRESIÓN OFICIAL (@media print)
-   Genera una constancia institucional formal de radicación lista para PDF
    ========================================================================== */
 @media print {
   body * {
     visibility: hidden;
   }
 
-  #print-certificate-container,
-  #print-certificate-container * {
+  /* Modo impresión: Oficio formal o Constancia */
+  body.printing-oficio #print-oficio-container,
+  body.printing-oficio #print-oficio-container * {
     visibility: visible;
   }
 
+  body:not(.printing-oficio) #print-certificate-container,
+  body:not(.printing-oficio) #print-certificate-container * {
+    visibility: visible;
+  }
+
+  #print-oficio-container,
   #print-certificate-container {
     display: block !important;
     position: absolute;
@@ -197,6 +254,6 @@ body {
 
   @page {
     size: letter;
-    margin: 1.5cm;
+    margin: 1.2cm;
   }
 }
