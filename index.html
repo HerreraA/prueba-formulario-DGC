@@ -443,12 +443,68 @@
         <!-- Menú Desplegable / Selector de Trámites -->
         <div id="selector-tramites-container" class="hidden slide-down pt-2">
           <div class="border-t border-slate-200 pt-4 space-y-4">
+
+            <!-- ============================================================
+                 BANNER INSTITUCIONAL DE SENSIBILIZACIÓN Y PREVENCIÓN
+                 ============================================================ -->
+            <div class="banner-anti-tramitador p-5 text-slate-800">
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-[#002855] text-[#FDC300] flex items-center justify-center text-xl flex-shrink-0 shadow-sm mt-0.5">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="flex-1 space-y-2">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h4 class="text-xs sm:text-sm font-extrabold text-[#002855] uppercase tracking-wide flex items-center gap-1.5">
+                      ¡RECUERDE! Todos los trámites ante la Secretaría Distrital de Movilidad son GRATUITOS y NO requieren intermediarios ni tramitadores.
+                    </h4>
+                    <span class="badge-gratuito flex-shrink-0 self-start sm:self-auto">
+                      <i class="fa-solid fa-circle-check"></i> Trámite 100% Gratuito y Directo
+                    </span>
+                  </div>
+                  <p class="text-xs text-slate-600 font-medium">
+                    Evite cobros indebidos y estafas. La Subdirección de Jurisdicción Coactiva le recuerda tener en cuenta los siguientes puntos de seguridad jurídica:
+                  </p>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-xs">
+                    <div class="flex items-start gap-2 bg-white/80 p-2.5 rounded-lg border border-slate-200/80">
+                      <i class="fa-solid fa-hand-holding-dollar text-emerald-600 mt-0.5 text-sm"></i>
+                      <div>
+                        <strong class="text-slate-900 block font-semibold">Cero costos de gestión:</strong>
+                        <span class="text-slate-600 text-[11px]">La radicación de solicitudes de desembargo, prescripción, entrega y apropiación de depósitos judiciales no tiene costo alguno.</span>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-2 bg-white/80 p-2.5 rounded-lg border border-slate-200/80">
+                      <i class="fa-solid fa-ban text-red-600 mt-0.5 text-sm"></i>
+                      <div>
+                        <strong class="text-slate-900 block font-semibold">No pague por agilizar:</strong>
+                        <span class="text-slate-600 text-[11px]">Ningún tercero o tramitador externo puede "acelerar" las decisiones jurídicas de la Subdirección de Jurisdicción Coactiva.</span>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-2 bg-white/80 p-2.5 rounded-lg border border-slate-200/80">
+                      <i class="fa-solid fa-user-shield text-blue-700 mt-0.5 text-sm"></i>
+                      <div>
+                        <strong class="text-slate-900 block font-semibold">Seguridad de datos:</strong>
+                        <span class="text-slate-600 text-[11px]">Entregar su información personal y documentos a intermediarios pone en riesgo sus datos confidenciales y financieros.</span>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-2 bg-white/80 p-2.5 rounded-lg border border-slate-200/80">
+                      <i class="fa-solid fa-globe text-[#005C8A] mt-0.5 text-sm"></i>
+                      <div>
+                        <strong class="text-slate-900 block font-semibold">Canal oficial de seguimiento:</strong>
+                        <span class="text-slate-600 text-[11px]">El avance del trámite se consulta directamente y sin costo en el portal oficial con el número de documento pasados 15 días hábiles.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="flex items-center justify-between">
               <p class="text-xs font-semibold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
                 <i class="fa-solid fa-list-check text-[#005C8A]"></i>
                 Seleccione el área del trámite:
               </p>
-              <span class="text-xs text-slate-500">Formato oficial SDM - Jurisdicción Coactiva</span>
+              <span class="text-xs text-slate-500 font-medium">Formato oficial SDM - Jurisdicción Coactiva</span>
             </div>
 
             <!-- Opciones Principales: 1. Embargos/Desembargos Coactiva | 2. Prescripciones -->
@@ -462,7 +518,9 @@
                   <div class="flex-1">
                     <div class="flex items-center justify-between">
                       <h4 class="text-sm font-bold text-slate-900">Embargos / Desembargos</h4>
-                      <span class="text-[10px] font-bold text-blue-800 bg-blue-100 px-2 py-0.5 rounded-full">Oficio Oficial SDM</span>
+                      <span class="badge-gratuito">
+                        <i class="fa-solid fa-shield-check"></i> Trámite 100% gratuito y en línea
+                      </span>
                     </div>
                     <p class="text-xs text-slate-600 mt-1">
                       Trámites ante la Subdirección de Jurisdicción Coactiva: Desembargos, Entrega de Títulos y Apropiación de Depósitos.
@@ -480,7 +538,9 @@
                   <div class="flex-1">
                     <div class="flex items-center justify-between">
                       <h4 class="text-sm font-bold text-slate-900">Prescripciones</h4>
-                      <span class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full">Ley 769 / CNT</span>
+                      <span class="badge-gratuito">
+                        <i class="fa-solid fa-shield-check"></i> Trámite 100% gratuito y en línea
+                      </span>
                     </div>
                     <p class="text-xs text-slate-500 mt-1">
                       Declaratoria de prescripción extintiva de comparendos de tránsito conforme a los términos de ley.
@@ -514,31 +574,53 @@
                 <!-- Checkbox 1: Solicitud de Desembargo -->
                 <label id="label-check-desembargo" class="coactiva-check-card checked p-3.5 rounded-xl bg-white flex items-start gap-3 select-none">
                   <input type="checkbox" id="check-tramite-desembargo" checked class="mt-1 w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A]">
-                  <div>
-                    <p class="text-xs font-bold text-slate-900">1. Solicitud de Desembargo</p>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <p class="text-xs font-bold text-slate-900">1. Solicitud de Desembargo</p>
+                    </div>
                     <p class="text-[11px] text-slate-500 mt-0.5">Levantamiento de medidas cautelares sobre bienes o cuentas.</p>
+                    <div class="mt-2">
+                      <span class="badge-gratuito text-[10px]">
+                        <i class="fa-solid fa-shield-check"></i> Trámite 100% gratuito y en línea
+                      </span>
+                    </div>
                   </div>
                 </label>
 
                 <!-- Checkbox 2: Entrega de Título de Depósito Judicial -->
                 <label id="label-check-entrega" class="coactiva-check-card p-3.5 rounded-xl bg-white flex items-start gap-3 select-none">
                   <input type="checkbox" id="check-tramite-entrega" class="mt-1 w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A]">
-                  <div>
-                    <p class="text-xs font-bold text-slate-900">2. Entrega de Título de Depósito</p>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <p class="text-xs font-bold text-slate-900">2. Entrega de Título de Depósito</p>
+                    </div>
                     <p class="text-[11px] text-slate-500 mt-0.5">Devolución o entrega de títulos judiciales consignados.</p>
+                    <div class="mt-2">
+                      <span class="badge-gratuito text-[10px]">
+                        <i class="fa-solid fa-shield-check"></i> Trámite 100% gratuito y en línea
+                      </span>
+                    </div>
                   </div>
                 </label>
 
                 <!-- Checkbox 3: Apropiación de Depósito Judicial -->
                 <label id="label-check-apropiacion" class="coactiva-check-card p-3.5 rounded-xl bg-white flex items-start gap-3 select-none">
                   <input type="checkbox" id="check-tramite-apropiacion" class="mt-1 w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A]">
-                  <div>
-                    <p class="text-xs font-bold text-slate-900">3. Apropiación de Depósito Judicial</p>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <p class="text-xs font-bold text-slate-900">3. Apropiación de Depósito Judicial</p>
+                    </div>
                     <p class="text-[11px] text-slate-500 mt-0.5">Aplicar el valor consignado para satisfacer la deuda con la SDM.</p>
+                    <div class="mt-2">
+                      <span class="badge-gratuito text-[10px]">
+                        <i class="fa-solid fa-shield-check"></i> Trámite 100% gratuito y en línea
+                      </span>
+                    </div>
                   </div>
                 </label>
               </div>
             </div>
+
 
           </div>
         </div>
@@ -1008,6 +1090,17 @@
             <!-- Inyectado dinámicamente -->
           </div>
 
+          <!-- Alerta Institucional de Transparencia y Prevención Anti-Tramitadores -->
+          <div class="p-3.5 rounded-lg bg-amber-50/90 border border-amber-300 text-amber-950 text-[11px] space-y-1">
+            <p class="font-bold flex items-center gap-1.5 uppercase tracking-wide text-[#002855]">
+              <i class="fa-solid fa-shield-halved text-[#005C8A]"></i>
+              Constancia de Transparencia: Trámite 100% Gratuito y Directo
+            </p>
+            <p class="leading-relaxed">
+              La Secretaría Distrital de Movilidad certifica que este trámite es <strong>100% GRATUITO</strong> y no requiere intermediarios, cobradores ni tramitadores. Ninguna persona ajena a la entidad puede condicionar, acelerar o cobrar por las decisiones de la Subdirección de Jurisdicción Coactiva.
+            </p>
+          </div>
+
           <!-- Bloque Consolidado de Datos del Solicitante -->
           <div class="pt-4 border-t border-slate-200 space-y-2">
             <p class="font-bold text-[#002855] uppercase text-[11px]">DATOS DEL SOLICITANTE:</p>
@@ -1169,6 +1262,15 @@
         <p class="text-[11px] text-slate-500 italic bg-amber-50 p-2.5 rounded border border-amber-200">
           * Pasados 15 días hábiles de la presente solicitud, usted podrá consultar el estado del desembargo y trámite de coactiva ingresando con su número de documento a la URL oficial www.movilidadbogota.gov.co.
         </p>
+
+        <!-- Declaración y Confirmación Ciudadana Anti-Intermediarios -->
+        <div class="p-3.5 bg-blue-50/90 border border-blue-200 rounded-xl flex items-start gap-3">
+          <input type="checkbox" id="check-confirmacion-gratuito" checked class="w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A] mt-0.5 cursor-pointer">
+          <label for="check-confirmacion-gratuito" class="text-xs text-slate-800 leading-snug cursor-pointer select-none">
+            <strong class="text-[#002855]">Declaración Ciudadana de Trámite Directo:</strong>
+            Entiendo que este trámite es gratuito y que la radicación se realiza de manera directa ante la Secretaría Distrital de Movilidad, sin intervención de terceros cobradores o tramitadores.
+          </label>
+        </div>
       </div>
 
       <!-- Pie del Modal con Acciones -->

@@ -1106,6 +1106,12 @@ const UIController = {
     });
 
     printBtn.addEventListener('click', () => {
+      const checkGratuito = document.getElementById('check-confirmacion-gratuito');
+      if (checkGratuito && !checkGratuito.checked) {
+        alert('Por favor confirme que comprende que el trámite es gratuito y directo marcando la casilla de declaración ciudadana antes de descargar la constancia.');
+        checkGratuito.focus();
+        return;
+      }
       window.print();
     });
 
@@ -1120,6 +1126,9 @@ const UIController = {
     const radicado = Utils.generateRadicadoNumber();
     const timestamp = Utils.getCurrentDateTimeString();
     Store.lastRadicacion = { radicado, timestamp };
+
+    const checkGratuito = document.getElementById('check-confirmacion-gratuito');
+    if (checkGratuito) checkGratuito.checked = true;
 
     document.getElementById('modal-radicado-code').textContent = radicado;
     document.getElementById('modal-timestamp').textContent = timestamp;

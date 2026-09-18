@@ -178,6 +178,36 @@ body {
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
+/* Banner de Sensibilización Anti-Tramitadores */
+.banner-anti-tramitador {
+  background: linear-gradient(135deg, #EFF6FF 0%, #FEFCE8 100%);
+  border: 1.5px solid #BFDBFE;
+  border-left: 5px solid #005C8A;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 40, 85, 0.05);
+}
+
+/* Badge Trámite 100% Gratuito */
+.badge-gratuito {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+}
+
+.badge-gratuito i {
+  color: #059669;
+  font-size: 0.72rem;
+}
+
+
 /* Hoja Formal para el Oficio Oficial */
 .oficio-papel {
   background: white;
