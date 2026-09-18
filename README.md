@@ -1,8 +1,8 @@
-# Secretaría Distrital de Movilidad de Bogotá - Prototipo SPA (DGC)
+# Secretaría Distrital de Movilidad de Bogotá - Prototipo SPA (Jurisdicción Coactiva)
 
-Prototipo funcional de Aplicación Web de Página Única (SPA) para la **Secretaría Distrital de Movilidad de Bogotá (SDM)**, orientado a la radicación virtual de trámites de **Cobro Coactivo y Comparendos** (Desembargos y Prescripciones).
+Prototipo funcional de Aplicación Web de Página Única (SPA) para la **Secretaría Distrital de Movilidad de Bogotá (SDM)**, adaptado estrictamente al formato oficial de la **Subdirección de Jurisdicción Coactiva** (Cra. 28A No. 17 A 20) para la radicación virtual de trámites de **Cobro Coactivo, Embargos, Depósitos Judiciales y Comparendos**.
 
-Diseñado con una estética institucional moderna, limpia y responsiva que adopta la paleta oficial de la **Alcaldía Mayor de Bogotá** y lineamientos de Gobierno Digital (Gov.co).
+Diseñado con una estética institucional moderna, limpia y responsiva que adopta la paleta oficial de la **Alcaldía Mayor de Bogotá**, lineamientos de Gobierno Digital (Gov.co) y componentes de prevención ciudadana contra el uso de tramitadores.
 
 ---
 
@@ -11,50 +11,77 @@ Diseñado con una estética institucional moderna, limpia y responsiva que adopt
 ### 1. Módulo 1: Datos Generales del Ciudadano (Formulario Base)
 - **Tipos de Solicitante:** Soporta Persona Natural (Ciudadano), Persona Jurídica (Empresa con Razón Social) y Solicitud Anónima.
 - **Asistente de Nomenclatura Urbana:** Constructor estructurado de direcciones (Vía Principal, Número, Letra, Generador, Placa y Complemento) con previsualización y sincronización automática.
-- **Validación Reactiva de Correo:** Validación de coincidencia en tiempo real entre el correo y su confirmación con feedback visual inmediato (verde/rojo).
+- **Validación Reactiva de Correo:** Compara en tiempo real el correo principal y su confirmación con feedback visual instantáneo (verde/rojo).
 - **Ubicación Geográfica:** Configuración por defecto de Bogotá D.C. (América, Colombia, Bogotá D.C.).
-- **Botón de Autollenado:** Incluye la función *"Autollenar datos de prueba"* para agilizar revisiones funcionales.
+- **Botón de Autollenado:** Función *"Autollenar datos de prueba"* para validación y testing ágil de todo el flujo.
 
-### 2. Módulo 2: Selector de Trámite Especializado
-- **Barrera de Validación:** Permanece bloqueado mientras los campos obligatorios del Módulo 1 no estén completos, mostrando un resumen dinámico de los datos faltantes.
-- **Activación:** Al completar los datos base, se habilita el botón destacado **"Cobro / Comparendos"**, desplegando un menú con dos opciones:
-  1. **Desembargos** (Cuentas bancarias y vehículos afectados por medidas cautelares).
-  2. **Prescripciones** (Sanciones y comparendos conforme a la Ley 769 de 2002).
+### 2. Módulo 2: Selector de Trámites Oficiales de Jurisdicción Coactiva
+- **Control de Acceso y Barrera de Validación:** Permanece bloqueado hasta completar los campos obligatorios del Módulo 1.
+- **Selección Múltiple Concurrente:** Selector interactivo que permite activar simultáneamente uno, dos o los tres trámites oficiales de Coactiva mediante casillas de verificación:
+  1. `[✓] 1. Solicitud de Desembargo`
+  2. `[✓] 2. Solicitud Entrega de Título de Depósito Judicial`
+  3. `[✓] 3. Solicitud de Apropiación de Depósito Judicial`
+- **Área Alternativa de Prescripciones:** Selección independiente para trámites de prescripción de comparendos (Ley 769 de 2002 / CNT).
+- **Badges de Confianza:** Etiqueta `Trámite 100% gratuito y en línea` visible en todas las opciones.
 
-### 3. Módulo 3: Formularios Específicos con Autollenado Reactivo
-- **Sincronización en Tiempo Real (`Dato heredado`):** Banner superior que refleja de forma instantánea el nombre, documento, correo, teléfono y dirección del solicitante con el badge institucional `Dato heredado del Módulo 1`.
-- **Desembargos:**
-  - Número de resolución o medida cautelar.
-  - Catálogo de entidades bancarias en Colombia.
-  - Número de cuenta o placa del bien embargado.
-  - Justificación breve con contador dinámico de caracteres (0 a 600).
-  - Zona Dropzone con soporte de arrastrar y soltar para **Certificación Bancaria** (PDF, JPG, PNG; máx 5 MB).
-- **Prescripciones:**
-  - Número de comparendo / sanción.
-  - Selector de fecha con cálculo dinámico de antigüedad en años respecto a los 3 años mínimos exigidos por el Art. 159 del CNT.
-  - Placa del vehículo asociada.
-  - Causales normativas de prescripción (Ley 769 / CPACA).
-  - Zona Dropzone con restricción estricta de ley: **Únicamente formato PDF** (máx 5 MB).
+### 3. Módulo 3: Formularios Específicos Basados en el Formato Oficial de Coactiva
+- **Autollenado Reactivo (`Dato heredado`):** Banner superior que refleja en tiempo real nombre, documento, correo, teléfono y dirección del solicitante.
+- **1. Solicitud de Desembargo:**
+  - **Calidad del Solicitante:** Selector entre `Solicitante directo / Propietario` y `Apoderado` (despliega campo para nombre del poderdante y carga de poder autenticado en PDF).
+  - **Declaración Formal Precargada:** Texto legal dinámico adaptado a la calidad del solicitante y su documento.
+  - **Tabla Dinámica de Bienes Embargados:** Permite agregar o eliminar múltiples filas de bienes con tipo (`Vehículo`, `Inmueble`, `Cuenta bancaria`, `Salario / Honorarios`, `Otro`), identificación y ciudad de registro o entidad bancaria/empleador.
+  - **Requisitos Específicos:** Carga obligatoria de fotocopia de la cédula del propietario y volante de pago cancelado (PDF/JPG/PNG, máx 5 MB).
+  - **Nota de Términos:** Recordatorio oficial de consulta de estado a los 15 días hábiles en el portal web.
+- **2. Solicitud Entrega de Título de Depósito Judicial:**
+  - Declaración formal precargada de entrega de título.
+  - Captura del número de depósito judicial y entidad bancaria o juzgado/cuenta origen.
+  - Carga obligatoria del soporte del título o recibo de consignación (PDF).
+- **3. Solicitud de Apropiación de Depósito Judicial:**
+  - Declaración formal precargada de autorización de aplicación de fondos a la deuda distrital.
+  - Obligación o número(s) de comparendo / proceso coactivo al que se aplicará el valor.
+  - Carga obligatoria de autorización y soporte de consignación (PDF).
 
-### 4. Módulo 4: Radicación Oficial y Constancia Imprimible
-- **Validación Estricta de Archivos:** Rechazo automático y alertas descriptivas ante extensiones no autorizadas o archivos que superen los 5 MB.
-- **Generación de Radicado Oficial:** Código simulado con estándar institucional: `SDM-2026-ER-[6 dígitos]`.
-- **Modal de Confirmación Institucional:** Resumen consolidado del ciudadano, detalle del trámite y listado de anexos recibidos.
-- **Soporte de Impresión Oficial (`@media print`):** Botón *"Descargar / Imprimir Constancia"* que genera una certificación membretada con sello digital y sello de tiempo lista para guardar como PDF.
+### 4. Módulo 4: Vista Previa del Oficio Formal y Radicación
+- **Modal de Vista Previa del Oficio:**
+  - Renderiza el documento formal en hoja membretada dirigido a:
+    ```text
+    Señores
+    SUBDIRECCIÓN DE JURISDICCIÓN COACTIVA
+    SECRETARÍA DISTRITAL DE MOVILIDAD - BOGOTÁ (Cra. 28A No. 17 A 20)
+    Asunto: SOLICITUD ANTE JURISDICCIÓN COACTIVA
+    Fecha: [Fecha actual en Bogotá]
+    ```
+  - Bloques dinámicos de los trámites activos con la tabla de bienes estructurada.
+  - Alerta institucional de transparencia y trámite directo sin intermediarios.
+  - Consolidado de datos del solicitante y espacio de **FIRMA** formal.
+  - Soporte de impresión oficial y exportación a PDF vía `@media print`.
+- **Radicación Oficial y Constancia Digital:**
+  - Generación de radicado institucional simulado: `SDM-2026-ER-[6 dígitos]`.
+  - Resumen consolidado con sello de tiempo y listado de anexos.
+  - Opción de impresión de la constancia oficial de radicación.
+
+---
+
+## 🛡️ Campaña de Sensibilización: "Trámites Directos y Sin Intermediarios"
+
+Con el fin de prevenir fraudes, cobros indebidos y proteger los datos personales del ciudadano, la aplicación integra:
+- **Banner Institucional Destacado:** Visible al abrir la sección de Cobro / Coactiva y reforzado dentro del oficio formal con 4 pilares:
+  1. **Cero costos de gestión:** Todos los trámites son 100% gratuitos.
+  2. **No pague por agilizar:** Ningún tramitador externo puede acelerar las decisiones jurídicas de la Subdirección de Jurisdicción Coactiva.
+  3. **Seguridad de datos:** Evita el riesgo de entregar información sensible a terceros.
+  4. **Canal oficial de seguimiento:** Consulta gratuita a los 15 días hábiles en www.movilidadbogota.gov.co.
+- **Declaración Ciudadana Obligatoria:** Casilla de confirmación en el modal de radicación:
+  > *`[✓] Entiendo que este trámite es gratuito y que la radicación se realiza de manera directa ante la Secretaría Distrital de Movilidad, sin intervención de terceros cobradores o tramitadores.`*
 
 ---
 
 ## 💻 Pila Tecnológica
 
 - **HTML5** Semántico y accesible (WAI-ARIA).
-- **Tailwind CSS** (vía CDN) con paleta personalizada:
-  - Azul Institucional SDM: `#002855`
-  - Azul Secundario: `#005C8A`
-  - Amarillo Bogotá: `#FDC300`
-  - Rojo Bogotá: `#DA291C`
-- **FontAwesome 6** (vía CDN) para iconografía institucional.
-- **JavaScript Vanilla Modular:** Gestión de estado centralizada (`Store`), sin frameworks pesados ni dependencias complejas.
-- **Yarn:** Gestor de paquetes y ejecutor del servidor local (`serve`).
+- **Tailwind CSS** (vía CDN) con paleta oficial de Bogotá (`#002855`, `#005C8A`, `#FDC300`, `#DA291C`).
+- **FontAwesome 6** (vía CDN) para iconografía institucional y sellos de seguridad.
+- **JavaScript Vanilla Modular:** Gestión reactiva con `Store` centralizado, sin dependencias pesadas ni compilación.
+- **Yarn:** Gestor de paquetes y servidor local (`serve`).
 
 ---
 
@@ -94,12 +121,12 @@ Diseñado con una estética institucional moderna, limpia y responsiva que adopt
 ```text
 prueba-formulario-DGC/
 ├── .gitignore          # Exclusión de node_modules y logs
-├── README.md           # Documentación general del proyecto
+├── README.md           # Documentación completa del proyecto
 ├── package.json        # Configuración de dependencias y scripts de Yarn
-├── yarn.lock           # Lockfile de dependencias
-├── index.html          # Vista principal semántica y accesible
-├── styles.css          # Estilos institucionales, animaciones y @media print
-└── app.js              # Controlador reactivo en JavaScript Vanilla
+├── yarn.lock           # Lockfile determinista de dependencias
+├── index.html          # Vista principal semántica, WAI-ARIA y modales
+├── styles.css          # Estilos institucionales, animaciones, hoja de oficio y @media print
+└── app.js              # Lógica reactiva en JavaScript Vanilla modular
 ```
 
 ---
