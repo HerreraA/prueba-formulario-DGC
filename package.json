@@ -1,0 +1,24 @@
+{
+  "name": "sdm-bogota-tramites-spa",
+  "version": "1.0.0",
+  "description": "Prototipo funcional SPA para radicación de trámites de Cobro / Comparendos - Secretaría Distrital de Movilidad de Bogotá",
+  "main": "app.js",
+  "scripts": {
+    "start": "serve . -l 8000",
+    "serve": "serve . -l 8000",
+    "dev": "serve . -l 8000"
+  },
+  "keywords": [
+    "bogota",
+    "movilidad",
+    "tramites",
+    "cobro-coactivo",
+    "comparendos",
+    "spa"
+  ],
+  "author": "Secretaría Distrital de Movilidad de Bogotá",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

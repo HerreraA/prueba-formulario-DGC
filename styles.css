@@ -1,0 +1,202 @@
+/* ==========================================================================
+   Estilos Institucionales - Secretaría Distrital de Movilidad de Bogotá (SDM)
+   ========================================================================== */
+
+:root {
+  --sdm-primary: #002855;
+  --sdm-primary-light: #0f3d7a;
+  --sdm-secondary: #005C8A;
+  --sdm-yellow: #FDC300;
+  --sdm-yellow-dark: #E5A800;
+  --sdm-red: #DA291C;
+  --sdm-bg: #F8FAFC;
+  --sdm-border: #E2E8F0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--sdm-bg);
+  color: #1E293B;
+  min-height: 100vh;
+}
+
+/* Animaciones */
+.fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  to {
+    opacity: 1;
+    max-height: 2000px;
+  }
+}
+
+/* Badge de Dato Heredado */
+.badge-heredado {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #EFF6FF;
+  color: #1D4ED8;
+  border: 1px solid #BFDBFE;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px rgba(29, 78, 216, 0.08);
+}
+
+.badge-heredado i {
+  color: #2563EB;
+  font-size: 0.75rem;
+}
+
+/* Campos heredados con feedback reactivo */
+.input-heredado {
+  background-color: #F8FAFC !important;
+  border-left: 3.5px solid #3B82F6 !important;
+  color: #1E293B;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.input-heredado:focus {
+  background-color: #FFFFFF !important;
+  border-left-color: #1D4ED8 !important;
+}
+
+/* Estilos de Drag and Drop Dropzone */
+.dropzone-area {
+  border: 2px dashed #CBD5E1;
+  background-color: #F8FAFC;
+  transition: all 0.25s ease;
+}
+
+.dropzone-area:hover {
+  border-color: var(--sdm-secondary);
+  background-color: #F0F9FF;
+}
+
+.dropzone-area.dragover {
+  border-color: #2563EB;
+  background-color: #EFF6FF;
+  transform: scale(1.008);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+/* Botones institucionales */
+.btn-sdm-primary {
+  background-color: var(--sdm-primary);
+  color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.btn-sdm-primary:hover {
+  background-color: var(--sdm-primary-light);
+  box-shadow: 0 4px 12px rgba(0, 40, 85, 0.25);
+}
+
+.btn-sdm-accent {
+  background-color: var(--sdm-yellow);
+  color: #002855;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.btn-sdm-accent:hover {
+  background-color: var(--sdm-yellow-dark);
+  box-shadow: 0 4px 12px rgba(229, 168, 0, 0.35);
+}
+
+/* Tarjeta de trámite interactiva */
+.tramite-card {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.tramite-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px -5px rgba(0, 40, 85, 0.1), 0 8px 10px -6px rgba(0, 40, 85, 0.05);
+}
+
+.tramite-card.selected {
+  border-color: #005C8A;
+  background-color: #F0F9FF;
+  box-shadow: 0 0 0 3px rgba(0, 92, 138, 0.15), 0 8px 20px rgba(0, 92, 138, 0.12);
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* ==========================================================================
+   ESTILOS DE IMPRESIÓN OFICIAL (@media print)
+   Genera una constancia institucional formal de radicación lista para PDF
+   ========================================================================== */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #print-certificate-container,
+  #print-certificate-container * {
+    visibility: visible;
+  }
+
+  #print-certificate-container {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 24px;
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  @page {
+    size: letter;
+    margin: 1.5cm;
+  }
+}
