@@ -1,6 +1,6 @@
 /**
  * ==============================================================================
- * Portal de Radicación Virtual de Trámites - Subdirección de Jurisdicción Coactiva
+ * Portal de Radicación Virtual de Trámites - Direccion de gestión de cobro
  * Secretaría Distrital de Movilidad de Bogotá (Cra. 28A No. 17 A 20)
  * JavaScript Vanilla Modular con Gestión de Estado Reactivo
  * ==============================================================================
@@ -368,7 +368,7 @@ const Validators = {
     const t = Store.coactiva.tramites;
 
     if (!t.desembargo && !t.entregaTitulo && !t.apropiacion) {
-      errors.push('Debe activar al menos un trámite de Jurisdicción Coactiva (Desembargo, Entrega o Apropiación).');
+      errors.push('Debe activar al menos un trámite de cobro Coactivo (Desembargo, Entrega o Apropiación).');
       return errors;
     }
 
@@ -841,7 +841,7 @@ const UIController = {
       coactivaContainer.classList.remove('hidden');
       prescripcionContainer.classList.add('hidden');
 
-      formTitle.textContent = 'Módulo 3: Formato Oficial - Subdirección de Jurisdicción Coactiva';
+      formTitle.textContent = 'Módulo 3: Formato Oficial - Direccion de gestión de cobro';
       pill.innerHTML = `
         <span class="bg-[#002855] text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
           <i class="fa-solid fa-landmark text-[#FDC300]"></i>
@@ -1161,11 +1161,11 @@ const UIController = {
       resumenHtml += `
         <div class="grid grid-cols-3 p-2">
           <span class="text-slate-500 font-medium">Sede de Radicación:</span>
-          <span class="col-span-2 font-bold text-[#002855]">Subdirección de Jurisdicción Coactiva (Cra. 28A No. 17 A 20)</span>
+          <span class="col-span-2 font-bold text-[#002855]">Direccion de gestión de cobro (Cra. 28A No. 17 A 20)</span>
         </div>
       `;
       printTrs += `
-        <tr><td style="border: 1px solid #ccc; padding: 6px; font-weight: bold; width: 35%;">Dependencia Competente:</td><td style="border: 1px solid #ccc; padding: 6px;">Subdirección de Jurisdicción Coactiva (Cra. 28A No. 17 A 20)</td></tr>
+        <tr><td style="border: 1px solid #ccc; padding: 6px; font-weight: bold; width: 35%;">Dependencia Competente:</td><td style="border: 1px solid #ccc; padding: 6px;">Direccion de gestión de cobro (Cra. 28A No. 17 A 20)</td></tr>
       `;
 
       if (t.desembargo) {

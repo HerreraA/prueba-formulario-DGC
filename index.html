@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Secretaría Distrital de Movilidad - Jurisdicción Coactiva y Trámites Virtuales</title>
-  <meta name="description" content="Portal oficial de radicación virtual para trámites de la Subdirección de Jurisdicción Coactiva (Embargos, Desembargos y Depósitos Judiciales) y Comparendos - Alcaldía Mayor de Bogotá">
+  <title>Secretaría Distrital de Movilidad - Dirección de Gestión de Cobro</title>
+  <meta name="description"
+    content="Portal oficial de radicación virtual para trámites de la Direccion de gestión de cobro (Embargos, Desembargos y Depósitos Judiciales) y Comparendos - Alcaldía Mayor de Bogotá">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -31,10 +33,12 @@
   <!-- Inter Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
 
   <!-- Franja Tricolor Institucional Bogotá -->
@@ -49,7 +53,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap justify-between items-center gap-4">
       <div class="flex items-center space-x-4">
         <!-- Escudo / Logo Bogotá SDM -->
-        <div class="bg-white/10 p-2 rounded-lg backdrop-blur-sm border border-white/20 flex items-center justify-center">
+        <div
+          class="bg-white/10 p-2 rounded-lg backdrop-blur-sm border border-white/20 flex items-center justify-center">
           <i class="fa-solid fa-landmark-flag text-2xl text-[#FDC300]"></i>
         </div>
         <div>
@@ -59,13 +64,14 @@
             <span class="text-xs text-slate-200 font-medium">Secretaría Distrital de Movilidad</span>
           </div>
           <h1 class="text-lg sm:text-xl font-bold tracking-tight text-white flex items-center gap-2">
-            Portal de Radicación Virtual - Jurisdicción Coactiva
+            Portal de Radicación Virtual - Dirección de gestión de cobro
           </h1>
         </div>
       </div>
 
       <div class="flex items-center gap-3 text-xs">
-        <span class="bg-emerald-600/90 text-white font-medium px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+        <span
+          class="bg-emerald-600/90 text-white font-medium px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
           <span class="w-2 h-2 rounded-full bg-emerald-300 animate-ping"></span>
           Ventanilla Digital Activa
         </span>
@@ -90,7 +96,7 @@
             <li><i class="fa-solid fa-chevron-right text-slate-400 text-[10px]"></i></li>
             <li><span>Trámites y Servicios</span></li>
             <li><i class="fa-solid fa-chevron-right text-slate-400 text-[10px]"></i></li>
-            <li class="text-[#005C8A] font-semibold">Subdirección de Jurisdicción Coactiva (Cra. 28A No. 17 A 20)</li>
+            <li class="text-[#005C8A] font-semibold">Direccion de gestión de cobro (Cra. 28A No. 17 A 20)</li>
           </ol>
         </nav>
         <div class="text-xs text-slate-500 flex items-center gap-2">
@@ -102,8 +108,10 @@
       <!-- Stepper / Indicador de Progreso -->
       <div class="grid grid-cols-1 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-100">
         <!-- Paso 1 -->
-        <div id="step-indicator-1" class="flex items-center gap-2 p-2 rounded-lg bg-blue-50 border-l-4 border-[#005C8A] transition-all">
-          <span class="w-7 h-7 rounded-full bg-[#005C8A] text-white flex items-center justify-center text-xs font-bold" id="step-badge-1">1</span>
+        <div id="step-indicator-1"
+          class="flex items-center gap-2 p-2 rounded-lg bg-blue-50 border-l-4 border-[#005C8A] transition-all">
+          <span class="w-7 h-7 rounded-full bg-[#005C8A] text-white flex items-center justify-center text-xs font-bold"
+            id="step-badge-1">1</span>
           <div class="truncate">
             <p class="text-xs font-bold text-slate-800 truncate">Paso 1: Solicitante</p>
             <p class="text-[11px] text-slate-500 truncate" id="step-status-1">En diligenciamiento</p>
@@ -111,8 +119,11 @@
         </div>
 
         <!-- Paso 2 -->
-        <div id="step-indicator-2" class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 border-l-4 border-slate-300 opacity-70 transition-all">
-          <span class="w-7 h-7 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-xs font-bold" id="step-badge-2">2</span>
+        <div id="step-indicator-2"
+          class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 border-l-4 border-slate-300 opacity-70 transition-all">
+          <span
+            class="w-7 h-7 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-xs font-bold"
+            id="step-badge-2">2</span>
           <div class="truncate">
             <p class="text-xs font-bold text-slate-700 truncate">Paso 2: Trámite Coactivo</p>
             <p class="text-[11px] text-slate-400 truncate" id="step-status-2">Bloqueado</p>
@@ -120,8 +131,11 @@
         </div>
 
         <!-- Paso 3 -->
-        <div id="step-indicator-3" class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 border-l-4 border-slate-300 opacity-70 transition-all">
-          <span class="w-7 h-7 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-xs font-bold" id="step-badge-3">3</span>
+        <div id="step-indicator-3"
+          class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 border-l-4 border-slate-300 opacity-70 transition-all">
+          <span
+            class="w-7 h-7 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-xs font-bold"
+            id="step-badge-3">3</span>
           <div class="truncate">
             <p class="text-xs font-bold text-slate-700 truncate">Paso 3: Formato Oficial</p>
             <p class="text-[11px] text-slate-400 truncate" id="step-status-3">Pendiente</p>
@@ -129,8 +143,11 @@
         </div>
 
         <!-- Paso 4 -->
-        <div id="step-indicator-4" class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 border-l-4 border-slate-300 opacity-70 transition-all">
-          <span class="w-7 h-7 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-xs font-bold" id="step-badge-4">4</span>
+        <div id="step-indicator-4"
+          class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 border-l-4 border-slate-300 opacity-70 transition-all">
+          <span
+            class="w-7 h-7 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-xs font-bold"
+            id="step-badge-4">4</span>
           <div class="truncate">
             <p class="text-xs font-bold text-slate-700 truncate">Paso 4: Oficio / Radicación</p>
             <p class="text-[11px] text-slate-400 truncate">Vista Previa & Radicado</p>
@@ -146,11 +163,13 @@
     <!-- ====================================================================
          MÓDULO 1: DATOS GENERALES DEL CIUDADANO (FORMULARIO BASE)
          ==================================================================== -->
-    <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden transition-all" id="module-1-section">
+    <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden transition-all"
+      id="module-1-section">
       <!-- Encabezado de Sección -->
       <div class="bg-slate-50 px-6 py-4 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
         <div class="flex items-center space-x-3">
-          <div class="w-8 h-8 rounded-full bg-[#002855] text-white flex items-center justify-center text-sm font-bold shadow-sm">
+          <div
+            class="w-8 h-8 rounded-full bg-[#002855] text-white flex items-center justify-center text-sm font-bold shadow-sm">
             1
           </div>
           <div>
@@ -158,12 +177,14 @@
               Módulo 1: Datos Generales del Ciudadano o Solicitante
             </h2>
             <p class="text-xs text-slate-500">
-              Información de identificación y ubicación que se hereda en tiempo real a las solicitudes de Jurisdicción Coactiva.
+              Información de identificación y ubicación que se hereda en tiempo real a las solicitudes de Jurisdicción
+              Coactiva.
             </p>
           </div>
         </div>
         <div id="module-1-badge-status">
-          <span class="bg-amber-50 text-amber-800 text-xs font-semibold px-2.5 py-1 rounded border border-amber-300 flex items-center gap-1.5">
+          <span
+            class="bg-amber-50 text-amber-800 text-xs font-semibold px-2.5 py-1 rounded border border-amber-300 flex items-center gap-1.5">
             <i class="fa-solid fa-triangle-exclamation text-amber-600"></i>
             Campos obligatorios pendientes
           </span>
@@ -178,7 +199,8 @@
             <label for="solicitante_tipo" class="block text-xs font-semibold text-slate-700 mb-1">
               Tipo de Solicitante <span class="text-red-600">*</span>
             </label>
-            <select id="solicitante_tipo" name="solicitante_tipo" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 bg-white border">
+            <select id="solicitante_tipo" name="solicitante_tipo"
+              class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 bg-white border">
               <option value="ciudadano" selected>Ciudadano (Persona Natural)</option>
               <option value="empresa">Empresa (Persona Jurídica)</option>
               <option value="anonimo">Anónimo (Petición Anónima)</option>
@@ -189,7 +211,8 @@
             <label for="documento_tipo" class="block text-xs font-semibold text-slate-700 mb-1">
               Tipo de Documento <span class="text-red-600">*</span>
             </label>
-            <select id="documento_tipo" name="documento_tipo" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 bg-white border">
+            <select id="documento_tipo" name="documento_tipo"
+              class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 bg-white border">
               <option value="CC" selected>Cédula de Ciudadanía (CC)</option>
               <option value="CE">Cédula de Extranjería (CE)</option>
               <option value="NIT">NIT / RUT</option>
@@ -203,8 +226,10 @@
               Número de Identificación / Documento <span class="text-red-600">*</span>
             </label>
             <div class="relative">
-              <input type="text" id="documento_numero" name="documento_numero" placeholder="Ej. 1020304050" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border pr-9">
-              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400" id="doc-validation-icon">
+              <input type="text" id="documento_numero" name="documento_numero" placeholder="Ej. 1020304050"
+                class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border pr-9">
+              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400"
+                id="doc-validation-icon">
                 <i class="fa-solid fa-id-card"></i>
               </div>
             </div>
@@ -218,19 +243,22 @@
             <label for="nombres" class="block text-xs font-semibold text-slate-700 mb-1">
               Nombres Completos <span class="text-red-600">*</span>
             </label>
-            <input type="text" id="nombres" name="nombres" placeholder="Ej. Carlos Andrés" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border">
+            <input type="text" id="nombres" name="nombres" placeholder="Ej. Carlos Andrés"
+              class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border">
           </div>
           <div>
             <label for="primer_apellido" class="block text-xs font-semibold text-slate-700 mb-1">
               Primer Apellido <span class="text-red-600">*</span>
             </label>
-            <input type="text" id="primer_apellido" name="primer_apellido" placeholder="Ej. Gómez" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border">
+            <input type="text" id="primer_apellido" name="primer_apellido" placeholder="Ej. Gómez"
+              class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border">
           </div>
           <div>
             <label for="segundo_apellido" class="block text-xs font-semibold text-slate-700 mb-1">
               Segundo Apellido
             </label>
-            <input type="text" id="segundo_apellido" name="segundo_apellido" placeholder="Ej. Ramírez (Opcional)" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border">
+            <input type="text" id="segundo_apellido" name="segundo_apellido" placeholder="Ej. Ramírez (Opcional)"
+              class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border">
           </div>
         </div>
 
@@ -240,7 +268,9 @@
             <label for="razon_social" class="block text-xs font-semibold text-slate-700 mb-1">
               Razón Social o Denominación de la Empresa <span class="text-red-600">*</span>
             </label>
-            <input type="text" id="razon_social" name="razon_social" placeholder="Ej. Logística y Transportes de Colombia S.A.S." class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border">
+            <input type="text" id="razon_social" name="razon_social"
+              placeholder="Ej. Logística y Transportes de Colombia S.A.S."
+              class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border">
           </div>
         </div>
 
@@ -256,7 +286,8 @@
 
           <div class="grid grid-cols-2 sm:grid-cols-6 gap-2">
             <div class="col-span-2 sm:col-span-2">
-              <label class="block text-[11px] text-slate-600 mb-0.5">Vía Principal <span class="text-red-500">*</span></label>
+              <label class="block text-[11px] text-slate-600 mb-0.5">Vía Principal <span
+                  class="text-red-500">*</span></label>
               <select id="dir_via" class="w-full text-xs rounded border-slate-300 p-2 bg-white border">
                 <option value="Calle" selected>Calle</option>
                 <option value="Carrera">Carrera</option>
@@ -269,19 +300,25 @@
             </div>
             <div class="col-span-1 sm:col-span-1">
               <label class="block text-[11px] text-slate-600 mb-0.5">Número <span class="text-red-500">*</span></label>
-              <input type="text" id="dir_num1" placeholder="Ej. 26" class="w-full text-xs rounded border-slate-300 p-2 border">
+              <input type="text" id="dir_num1" placeholder="Ej. 26"
+                class="w-full text-xs rounded border-slate-300 p-2 border">
             </div>
             <div class="col-span-1 sm:col-span-1">
               <label class="block text-[11px] text-slate-600 mb-0.5">Letra / Bis</label>
-              <input type="text" id="dir_letra1" placeholder="Ej. Sur / B" class="w-full text-xs rounded border-slate-300 p-2 border">
+              <input type="text" id="dir_letra1" placeholder="Ej. Sur / B"
+                class="w-full text-xs rounded border-slate-300 p-2 border">
             </div>
             <div class="col-span-1 sm:col-span-1">
-              <label class="block text-[11px] text-slate-600 mb-0.5"># Generador <span class="text-red-500">*</span></label>
-              <input type="text" id="dir_num2" placeholder="Ej. 13" class="w-full text-xs rounded border-slate-300 p-2 border">
+              <label class="block text-[11px] text-slate-600 mb-0.5"># Generador <span
+                  class="text-red-500">*</span></label>
+              <input type="text" id="dir_num2" placeholder="Ej. 13"
+                class="w-full text-xs rounded border-slate-300 p-2 border">
             </div>
             <div class="col-span-1 sm:col-span-1">
-              <label class="block text-[11px] text-slate-600 mb-0.5">Placa (-) <span class="text-red-500">*</span></label>
-              <input type="text" id="dir_num3" placeholder="Ej. 35" class="w-full text-xs rounded border-slate-300 p-2 border">
+              <label class="block text-[11px] text-slate-600 mb-0.5">Placa (-) <span
+                  class="text-red-500">*</span></label>
+              <input type="text" id="dir_num3" placeholder="Ej. 35"
+                class="w-full text-xs rounded border-slate-300 p-2 border">
             </div>
           </div>
 
@@ -290,15 +327,19 @@
               <label for="dir_complemento" class="block text-[11px] text-slate-600 mb-0.5">
                 Datos Complementarios (Apto, Torre, Oficina, Barrio)
               </label>
-              <input type="text" id="dir_complemento" placeholder="Ej. Apto 302 Torre 4 Barrio Teusaquillo" class="w-full text-xs rounded border-slate-300 p-2 bg-white border">
+              <input type="text" id="dir_complemento" placeholder="Ej. Apto 302 Torre 4 Barrio Teusaquillo"
+                class="w-full text-xs rounded border-slate-300 p-2 bg-white border">
             </div>
             <div>
               <label for="direccion_completa" class="block text-[11px] font-semibold text-slate-700 mb-0.5">
                 Dirección Generada / Confirmada <span class="text-red-600">*</span>
               </label>
               <div class="relative">
-                <input type="text" id="direccion_completa" name="direccion_completa" placeholder="Ej. Calle 26 # 13 - 35 Apto 302" class="w-full text-xs font-medium rounded border-slate-300 bg-white p-2 border pr-8">
-                <button type="button" id="btn-sync-address" title="Regenerar con los componentes" class="absolute inset-y-0 right-0 px-2.5 text-slate-400 hover:text-[#005C8A]">
+                <input type="text" id="direccion_completa" name="direccion_completa"
+                  placeholder="Ej. Calle 26 # 13 - 35 Apto 302"
+                  class="w-full text-xs font-medium rounded border-slate-300 bg-white p-2 border pr-8">
+                <button type="button" id="btn-sync-address" title="Regenerar con los componentes"
+                  class="absolute inset-y-0 right-0 px-2.5 text-slate-400 hover:text-[#005C8A]">
                   <i class="fa-solid fa-arrows-rotate text-xs"></i>
                 </button>
               </div>
@@ -313,7 +354,8 @@
               Teléfono de Contacto / Móvil <span class="text-red-600">*</span>
             </label>
             <div class="relative">
-              <input type="tel" id="telefono_contacto" name="telefono_contacto" placeholder="Ej. 3101234567" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border pr-9">
+              <input type="tel" id="telefono_contacto" name="telefono_contacto" placeholder="Ej. 3101234567"
+                class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border pr-9">
               <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400">
                 <i class="fa-solid fa-phone"></i>
               </div>
@@ -326,7 +368,8 @@
               Correo Electrónico <span class="text-red-600">*</span>
             </label>
             <div class="relative">
-              <input type="email" id="correo_electronico" name="correo_electronico" placeholder="ciudadano@ejemplo.com" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border pr-9">
+              <input type="email" id="correo_electronico" name="correo_electronico" placeholder="ciudadano@ejemplo.com"
+                class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border pr-9">
               <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400">
                 <i class="fa-solid fa-envelope"></i>
               </div>
@@ -339,12 +382,16 @@
               Confirmación de Correo Electrónico <span class="text-red-600">*</span>
             </label>
             <div class="relative">
-              <input type="email" id="correo_confirmacion" name="correo_confirmacion" placeholder="ciudadano@ejemplo.com" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border pr-9">
-              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400" id="email-match-icon">
+              <input type="email" id="correo_confirmacion" name="correo_confirmacion"
+                placeholder="ciudadano@ejemplo.com"
+                class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] focus:ring focus:ring-blue-200 p-2.5 border pr-9">
+              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400"
+                id="email-match-icon">
                 <i class="fa-solid fa-check-double"></i>
               </div>
             </div>
-            <p class="text-[11px] text-slate-400 mt-0.5" id="email-match-msg">Debe coincidir exactamente con el correo</p>
+            <p class="text-[11px] text-slate-400 mt-0.5" id="email-match-msg">Debe coincidir exactamente con el correo
+            </p>
           </div>
         </div>
 
@@ -352,11 +399,13 @@
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
           <div>
             <label for="ubicacion_continente" class="block text-xs font-semibold text-slate-700 mb-1">Continente</label>
-            <input type="text" id="ubicacion_continente" value="América" readonly class="w-full text-xs rounded-lg border-slate-200 bg-slate-100 p-2 text-slate-600 border cursor-not-allowed">
+            <input type="text" id="ubicacion_continente" value="América" readonly
+              class="w-full text-xs rounded-lg border-slate-200 bg-slate-100 p-2 text-slate-600 border cursor-not-allowed">
           </div>
           <div>
             <label for="ubicacion_pais" class="block text-xs font-semibold text-slate-700 mb-1">País</label>
-            <input type="text" id="ubicacion_pais" value="Colombia" readonly class="w-full text-xs rounded-lg border-slate-200 bg-slate-100 p-2 text-slate-600 border cursor-not-allowed">
+            <input type="text" id="ubicacion_pais" value="Colombia" readonly
+              class="w-full text-xs rounded-lg border-slate-200 bg-slate-100 p-2 text-slate-600 border cursor-not-allowed">
           </div>
           <div>
             <label for="ubicacion_depto" class="block text-xs font-semibold text-slate-700 mb-1">Departamento</label>
@@ -370,19 +419,23 @@
           </div>
           <div>
             <label for="ubicacion_municipio" class="block text-xs font-semibold text-slate-700 mb-1">Municipio</label>
-            <input type="text" id="ubicacion_municipio" value="Bogotá D.C." class="w-full text-xs rounded-lg border-slate-300 p-2 bg-white border">
+            <input type="text" id="ubicacion_municipio" value="Bogotá D.C."
+              class="w-full text-xs rounded-lg border-slate-300 p-2 bg-white border">
           </div>
         </div>
 
         <!-- Panel de Validación y Demo Helper -->
-        <div id="m1-validation-summary" class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <div id="m1-validation-summary"
+          class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
           <div class="flex items-center gap-2 text-xs text-slate-600">
             <span id="m1-status-icon" class="text-amber-500 text-sm">
               <i class="fa-solid fa-circle-exclamation"></i>
             </span>
-            <span id="m1-status-text">Complete los campos requeridos para habilitar el selector de trámites de Jurisdicción Coactiva.</span>
+            <span id="m1-status-text">Complete los campos requeridos para habilitar el selector de trámites de
+              Direccion de gestión de cobro.</span>
           </div>
-          <button type="button" id="btn-quick-fill-demo" class="text-[11px] font-medium text-[#005C8A] hover:underline flex items-center gap-1">
+          <button type="button" id="btn-quick-fill-demo"
+            class="text-[11px] font-medium text-[#005C8A] hover:underline flex items-center gap-1">
             <i class="fa-solid fa-wand-magic-sparkles text-amber-500"></i> Autollenar datos de prueba
           </button>
         </div>
@@ -390,21 +443,23 @@
     </section>
 
     <!-- ====================================================================
-         MÓDULO 2: SELECTOR DE TRÁMITES DE JURISDICCIÓN COACTIVA
+         MÓDULO 2: SELECTOR DE TRÁMITES DE Direccion de gestión de cobro
          ==================================================================== -->
     <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" id="module-2-section">
       <!-- Encabezado de Sección -->
       <div class="bg-slate-50 px-6 py-4 border-b border-slate-200 flex items-center justify-between">
         <div class="flex items-center space-x-3">
-          <div class="w-8 h-8 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-sm font-bold shadow-sm" id="module-2-num-badge">
+          <div
+            class="w-8 h-8 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-sm font-bold shadow-sm"
+            id="module-2-num-badge">
             2
           </div>
           <div>
             <h2 class="text-base sm:text-lg font-bold text-slate-900">
-              Módulo 2: Selector de Trámites de Jurisdicción Coactiva y Comparendos
+              Módulo 2: Selector de Trámites de Direccion de gestión de cobro y Comparendos
             </h2>
             <p class="text-xs text-slate-500">
-              Subdirección de Jurisdicción Coactiva - Cra. 28A No. 17 A 20, Bogotá D.C.
+              Direccion de gestión de cobro - Cra. 28A No. 17 A 20, Bogotá D.C.
             </p>
           </div>
         </div>
@@ -413,11 +468,14 @@
       <div class="p-6 space-y-6">
         <!-- Botón / Sección Destacada "Cobro / Comparendos" -->
         <div class="text-center md:text-left">
-          <div class="inline-flex flex-col sm:flex-row sm:items-center gap-3 w-full p-4 rounded-xl border border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50/40">
+          <div
+            class="inline-flex flex-col sm:flex-row sm:items-center gap-3 w-full p-4 rounded-xl border border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50/40">
             <div class="flex-1">
               <div class="flex items-center gap-2 mb-1">
-                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#002855] text-white uppercase tracking-wider">Dirección de Gestión de Cobro</span>
-                <span class="text-xs text-slate-500">Subdirección de Jurisdicción Coactiva</span>
+                <span
+                  class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#002855] text-white uppercase tracking-wider">Dirección
+                  de Gestión de Cobro</span>
+                <span class="text-xs text-slate-500">Direccion de gestión de cobro</span>
               </div>
               <h3 class="text-base font-bold text-slate-800">
                 Cobro Coactivo, Embargos y Títulos de Depósito Judicial
@@ -428,7 +486,8 @@
             </div>
 
             <!-- Botón de Activación -->
-            <button type="button" id="btn-cobro-comparendos" disabled class="px-6 py-3.5 rounded-xl font-bold text-sm text-slate-400 bg-slate-200 cursor-not-allowed shadow-sm flex items-center justify-center gap-2.5 transition-all">
+            <button type="button" id="btn-cobro-comparendos" disabled
+              class="px-6 py-3.5 rounded-xl font-bold text-sm text-slate-400 bg-slate-200 cursor-not-allowed shadow-sm flex items-center justify-center gap-2.5 transition-all">
               <i class="fa-solid fa-gavel text-base"></i>
               <span>Cobro / Comparendos</span>
               <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300" id="btn-cobro-arrow"></i>
@@ -436,7 +495,8 @@
           </div>
           <p id="cobro-disabled-helper" class="text-xs text-amber-600 mt-2 flex items-center gap-1.5">
             <i class="fa-solid fa-lock"></i>
-            <span>Debe completar satisfactoriamente todos los campos obligatorios del Módulo 1 para desbloquear este selector.</span>
+            <span>Debe completar satisfactoriamente todos los campos obligatorios del Módulo 1 para desbloquear este
+              selector.</span>
           </p>
         </div>
 
@@ -449,20 +509,24 @@
                  ============================================================ -->
             <div class="banner-anti-tramitador p-5 text-slate-800">
               <div class="flex items-start gap-3.5">
-                <div class="w-10 h-10 rounded-xl bg-[#002855] text-[#FDC300] flex items-center justify-center text-xl flex-shrink-0 shadow-sm mt-0.5">
+                <div
+                  class="w-10 h-10 rounded-xl bg-[#002855] text-[#FDC300] flex items-center justify-center text-xl flex-shrink-0 shadow-sm mt-0.5">
                   <i class="fa-solid fa-shield-halved"></i>
                 </div>
                 <div class="flex-1 space-y-2">
                   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <h4 class="text-xs sm:text-sm font-extrabold text-[#002855] uppercase tracking-wide flex items-center gap-1.5">
-                      ¡RECUERDE! Todos los trámites ante la Secretaría Distrital de Movilidad son GRATUITOS y NO requieren intermediarios ni tramitadores.
+                    <h4
+                      class="text-xs sm:text-sm font-extrabold text-[#002855] uppercase tracking-wide flex items-center gap-1.5">
+                      ¡RECUERDE! Todos los trámites ante la Secretaría Distrital de Movilidad son GRATUITOS y NO
+                      requieren intermediarios ni tramitadores.
                     </h4>
                     <span class="badge-gratuito flex-shrink-0 self-start sm:self-auto">
                       <i class="fa-solid fa-circle-check"></i> Trámite 100% Gratuito y Directo
                     </span>
                   </div>
                   <p class="text-xs text-slate-600 font-medium">
-                    Evite cobros indebidos y estafas. La Subdirección de Jurisdicción Coactiva le recuerda tener en cuenta los siguientes puntos de seguridad jurídica:
+                    Evite cobros indebidos y estafas. La Direccion de gestión de cobro le recuerda tener en
+                    cuenta los siguientes puntos de seguridad jurídica:
                   </p>
 
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-xs">
@@ -470,28 +534,32 @@
                       <i class="fa-solid fa-hand-holding-dollar text-emerald-600 mt-0.5 text-sm"></i>
                       <div>
                         <strong class="text-slate-900 block font-semibold">Cero costos de gestión:</strong>
-                        <span class="text-slate-600 text-[11px]">La radicación de solicitudes de desembargo, prescripción, entrega y apropiación de depósitos judiciales no tiene costo alguno.</span>
+                        <span class="text-slate-600 text-[11px]">La radicación de solicitudes de desembargo,
+                          prescripción, entrega y apropiación de depósitos judiciales no tiene costo alguno.</span>
                       </div>
                     </div>
                     <div class="flex items-start gap-2 bg-white/80 p-2.5 rounded-lg border border-slate-200/80">
                       <i class="fa-solid fa-ban text-red-600 mt-0.5 text-sm"></i>
                       <div>
                         <strong class="text-slate-900 block font-semibold">No pague por agilizar:</strong>
-                        <span class="text-slate-600 text-[11px]">Ningún tercero o tramitador externo puede "acelerar" las decisiones jurídicas de la Subdirección de Jurisdicción Coactiva.</span>
+                        <span class="text-slate-600 text-[11px]">Ningún tercero o tramitador externo puede "acelerar"
+                          las decisiones jurídicas de la Direccion de gestión de cobro.</span>
                       </div>
                     </div>
                     <div class="flex items-start gap-2 bg-white/80 p-2.5 rounded-lg border border-slate-200/80">
                       <i class="fa-solid fa-user-shield text-blue-700 mt-0.5 text-sm"></i>
                       <div>
                         <strong class="text-slate-900 block font-semibold">Seguridad de datos:</strong>
-                        <span class="text-slate-600 text-[11px]">Entregar su información personal y documentos a intermediarios pone en riesgo sus datos confidenciales y financieros.</span>
+                        <span class="text-slate-600 text-[11px]">Entregar su información personal y documentos a
+                          intermediarios pone en riesgo sus datos confidenciales y financieros.</span>
                       </div>
                     </div>
                     <div class="flex items-start gap-2 bg-white/80 p-2.5 rounded-lg border border-slate-200/80">
                       <i class="fa-solid fa-globe text-[#005C8A] mt-0.5 text-sm"></i>
                       <div>
                         <strong class="text-slate-900 block font-semibold">Canal oficial de seguimiento:</strong>
-                        <span class="text-slate-600 text-[11px]">El avance del trámite se consulta directamente y sin costo en el portal oficial con el número de documento pasados 15 días hábiles.</span>
+                        <span class="text-slate-600 text-[11px]">El avance del trámite se consulta directamente y sin
+                          costo en el portal oficial con el número de documento pasados 15 días hábiles.</span>
                       </div>
                     </div>
                   </div>
@@ -504,15 +572,18 @@
                 <i class="fa-solid fa-list-check text-[#005C8A]"></i>
                 Seleccione el área del trámite:
               </p>
-              <span class="text-xs text-slate-500 font-medium">Formato oficial SDM - Jurisdicción Coactiva</span>
+              <span class="text-xs text-slate-500 font-medium">Formato oficial SDM - Direccion de gestión de
+                cobro</span>
             </div>
 
             <!-- Opciones Principales: 1. Embargos/Desembargos Coactiva | 2. Prescripciones -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <!-- Tarjeta A: Embargos / Desembargos (Coactiva) -->
-              <div id="card-area-coactiva" class="tramite-card selected p-5 rounded-xl border-2 border-[#005C8A] bg-blue-50/50 transition-all">
+              <div id="card-area-coactiva"
+                class="tramite-card selected p-5 rounded-xl border-2 border-[#005C8A] bg-blue-50/50 transition-all">
                 <div class="flex items-start gap-3">
-                  <div class="w-10 h-10 rounded-lg bg-[#002855] text-white flex items-center justify-center text-lg flex-shrink-0">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-[#002855] text-white flex items-center justify-center text-lg flex-shrink-0">
                     <i class="fa-solid fa-building-columns"></i>
                   </div>
                   <div class="flex-1">
@@ -523,16 +594,19 @@
                       </span>
                     </div>
                     <p class="text-xs text-slate-600 mt-1">
-                      Trámites ante la Subdirección de Jurisdicción Coactiva: Desembargos, Entrega de Títulos y Apropiación de Depósitos.
+                      Trámites ante la Direccion de gestión de cobro: Desembargos, Entrega de Títulos y
+                      Apropiación de Depósitos.
                     </p>
                   </div>
                 </div>
               </div>
 
               <!-- Tarjeta B: Prescripciones -->
-              <div id="card-area-prescripcion" class="tramite-card p-5 rounded-xl border border-slate-200 bg-white hover:border-[#005C8A] transition-all">
+              <div id="card-area-prescripcion"
+                class="tramite-card p-5 rounded-xl border border-slate-200 bg-white hover:border-[#005C8A] transition-all">
                 <div class="flex items-start gap-3">
-                  <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center text-lg flex-shrink-0">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center text-lg flex-shrink-0">
                     <i class="fa-solid fa-scale-balanced"></i>
                   </div>
                   <div class="flex-1">
@@ -553,12 +627,14 @@
             <!-- ============================================================
                  SUBMENÚ DE TRÁMITES ESPECÍFICOS DE COACTIVA (CHECKBOXES SÍ/NO)
                  ============================================================ -->
-            <div id="coactiva-subtramites-selector" class="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-200">
+            <div id="coactiva-subtramites-selector"
+              class="p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-200">
                 <div>
                   <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                     <i class="fa-solid fa-check-double text-[#005C8A]"></i>
-                    Trámites Específicos de Jurisdicción Coactiva (Seleccione uno o varios)
+                    Trámites Específicos de Direccion de gestión de cobro (Seleccione uno o varios)
                   </h4>
                   <p class="text-[11px] text-slate-500">
                     Puede activar simultáneamente las solicitudes que apliquen a su caso según el formato oficial.
@@ -572,13 +648,16 @@
               <!-- Cuadrícula de Checkboxes -->
               <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
                 <!-- Checkbox 1: Solicitud de Desembargo -->
-                <label id="label-check-desembargo" class="coactiva-check-card checked p-3.5 rounded-xl bg-white flex items-start gap-3 select-none">
-                  <input type="checkbox" id="check-tramite-desembargo" checked class="mt-1 w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A]">
+                <label id="label-check-desembargo"
+                  class="coactiva-check-card checked p-3.5 rounded-xl bg-white flex items-start gap-3 select-none">
+                  <input type="checkbox" id="check-tramite-desembargo" checked
+                    class="mt-1 w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A]">
                   <div class="flex-1">
                     <div class="flex items-center justify-between">
                       <p class="text-xs font-bold text-slate-900">1. Solicitud de Desembargo</p>
                     </div>
-                    <p class="text-[11px] text-slate-500 mt-0.5">Levantamiento de medidas cautelares sobre bienes o cuentas.</p>
+                    <p class="text-[11px] text-slate-500 mt-0.5">Levantamiento de medidas cautelares sobre bienes o
+                      cuentas.</p>
                     <div class="mt-2">
                       <span class="badge-gratuito text-[10px]">
                         <i class="fa-solid fa-shield-check"></i> Trámite 100% gratuito y en línea
@@ -588,13 +667,16 @@
                 </label>
 
                 <!-- Checkbox 2: Entrega de Título de Depósito Judicial -->
-                <label id="label-check-entrega" class="coactiva-check-card p-3.5 rounded-xl bg-white flex items-start gap-3 select-none">
-                  <input type="checkbox" id="check-tramite-entrega" class="mt-1 w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A]">
+                <label id="label-check-entrega"
+                  class="coactiva-check-card p-3.5 rounded-xl bg-white flex items-start gap-3 select-none">
+                  <input type="checkbox" id="check-tramite-entrega"
+                    class="mt-1 w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A]">
                   <div class="flex-1">
                     <div class="flex items-center justify-between">
                       <p class="text-xs font-bold text-slate-900">2. Entrega de Título de Depósito</p>
                     </div>
-                    <p class="text-[11px] text-slate-500 mt-0.5">Devolución o entrega de títulos judiciales consignados.</p>
+                    <p class="text-[11px] text-slate-500 mt-0.5">Devolución o entrega de títulos judiciales consignados.
+                    </p>
                     <div class="mt-2">
                       <span class="badge-gratuito text-[10px]">
                         <i class="fa-solid fa-shield-check"></i> Trámite 100% gratuito y en línea
@@ -604,13 +686,16 @@
                 </label>
 
                 <!-- Checkbox 3: Apropiación de Depósito Judicial -->
-                <label id="label-check-apropiacion" class="coactiva-check-card p-3.5 rounded-xl bg-white flex items-start gap-3 select-none">
-                  <input type="checkbox" id="check-tramite-apropiacion" class="mt-1 w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A]">
+                <label id="label-check-apropiacion"
+                  class="coactiva-check-card p-3.5 rounded-xl bg-white flex items-start gap-3 select-none">
+                  <input type="checkbox" id="check-tramite-apropiacion"
+                    class="mt-1 w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A]">
                   <div class="flex-1">
                     <div class="flex items-center justify-between">
                       <p class="text-xs font-bold text-slate-900">3. Apropiación de Depósito Judicial</p>
                     </div>
-                    <p class="text-[11px] text-slate-500 mt-0.5">Aplicar el valor consignado para satisfacer la deuda con la SDM.</p>
+                    <p class="text-[11px] text-slate-500 mt-0.5">Aplicar el valor consignado para satisfacer la deuda
+                      con la SDM.</p>
                     <div class="mt-2">
                       <span class="badge-gratuito text-[10px]">
                         <i class="fa-solid fa-shield-check"></i> Trámite 100% gratuito y en línea
@@ -634,12 +719,13 @@
       <!-- Encabezado de Sección Dinámico -->
       <div class="bg-slate-50 px-6 py-4 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2">
         <div class="flex items-center space-x-3">
-          <div class="w-8 h-8 rounded-full bg-[#002855] text-white flex items-center justify-center text-sm font-bold shadow-sm">
+          <div
+            class="w-8 h-8 rounded-full bg-[#002855] text-white flex items-center justify-center text-sm font-bold shadow-sm">
             3
           </div>
           <div>
             <h2 class="text-base sm:text-lg font-bold text-slate-900" id="form-especifico-title">
-              Módulo 3: Solicitud Oficial - Subdirección de Jurisdicción Coactiva
+              Módulo 3: Solicitud Oficial - Direccion de gestión de cobro
             </h2>
             <p class="text-xs text-slate-500">
               Formato dirigido a la Cra. 28A No. 17 A 20, Bogotá D.C.
@@ -662,7 +748,8 @@
               </span>
               <span class="text-xs text-slate-600 font-medium">Información sincronizada con el Módulo 1</span>
             </div>
-            <a href="#module-1-section" class="text-[11px] font-semibold text-[#005C8A] hover:underline flex items-center gap-1">
+            <a href="#module-1-section"
+              class="text-[11px] font-semibold text-[#005C8A] hover:underline flex items-center gap-1">
               <i class="fa-solid fa-pen-to-square"></i> Editar datos base
             </a>
           </div>
@@ -673,35 +760,40 @@
               <label class="block text-[11px] font-semibold text-slate-600 uppercase tracking-wide">
                 Solicitante / Razón Social
               </label>
-              <input type="text" id="heredado-nombre" readonly class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
+              <input type="text" id="heredado-nombre" readonly
+                class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
             </div>
 
             <div>
               <label class="block text-[11px] font-semibold text-slate-600 uppercase tracking-wide">
                 Documento de Identificación
               </label>
-              <input type="text" id="heredado-documento" readonly class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
+              <input type="text" id="heredado-documento" readonly
+                class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
             </div>
 
             <div>
               <label class="block text-[11px] font-semibold text-slate-600 uppercase tracking-wide">
                 Correo Electrónico
               </label>
-              <input type="text" id="heredado-correo" readonly class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
+              <input type="text" id="heredado-correo" readonly
+                class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
             </div>
 
             <div>
               <label class="block text-[11px] font-semibold text-slate-600 uppercase tracking-wide">
                 Teléfono de Contacto
               </label>
-              <input type="text" id="heredado-telefono" readonly class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
+              <input type="text" id="heredado-telefono" readonly
+                class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
             </div>
 
             <div class="sm:col-span-2">
               <label class="block text-[11px] font-semibold text-slate-600 uppercase tracking-wide">
                 Dirección de Correspondencia y Municipio
               </label>
-              <input type="text" id="heredado-direccion" readonly class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
+              <input type="text" id="heredado-direccion" readonly
+                class="input-heredado w-full text-xs rounded border border-slate-300 p-2 cursor-default">
             </div>
           </div>
         </div>
@@ -714,16 +806,19 @@
           <!-- --------------------------------------------------------------
                1. TRÁMITE 1: SOLICITUD DE DESEMBARGO
                -------------------------------------------------------------- -->
-          <div id="bloque-tramite-desembargo" class="p-5 rounded-xl border border-slate-200 bg-white space-y-5 shadow-sm">
+          <div id="bloque-tramite-desembargo"
+            class="p-5 rounded-xl border border-slate-200 bg-white space-y-5 shadow-sm">
             <div class="border-b border-slate-200 pb-3 flex flex-wrap items-center justify-between gap-2">
               <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded-full bg-[#002855] text-white flex items-center justify-center text-xs font-bold">1</span>
+                <span
+                  class="w-6 h-6 rounded-full bg-[#002855] text-white flex items-center justify-center text-xs font-bold">1</span>
                 <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide">
                   Solicitud de Desembargo de Bienes o Cuentas
                 </h3>
               </div>
-              <span class="text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
-                Subdirección de Jurisdicción Coactiva
+              <span
+                class="text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
+                Direccion de gestión de cobro
               </span>
             </div>
 
@@ -733,7 +828,8 @@
                 <label for="desembargo_calidad" class="block text-xs font-semibold text-slate-700 mb-1">
                   Calidad del Solicitante <span class="text-red-600">*</span>
                 </label>
-                <select id="desembargo_calidad" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 bg-white border">
+                <select id="desembargo_calidad"
+                  class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 bg-white border">
                   <option value="Solicitante directo / Propietario" selected>Solicitante directo / Propietario</option>
                   <option value="Apoderado">Apoderado (Representante con poder especial)</option>
                 </select>
@@ -744,7 +840,8 @@
                 <label for="desembargo_poderdante" class="block text-xs font-semibold text-slate-700 mb-1">
                   Nombre Completo del Poderdante <span class="text-red-600">*</span>
                 </label>
-                <input type="text" id="desembargo_poderdante" placeholder="Ej. Juan Manuel Pérez Gómez" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 border">
+                <input type="text" id="desembargo_poderdante" placeholder="Ej. Juan Manuel Pérez Gómez"
+                  class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 border">
               </div>
             </div>
 
@@ -752,18 +849,25 @@
             <div id="apoderado-file-container" class="hidden p-3 bg-amber-50 rounded-lg border border-amber-200">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold text-amber-900">
-                  <i class="fa-solid fa-file-contract mr-1"></i> Carga Obligatoria de Poder Autenticado (PDF) <span class="text-red-600">*</span>
+                  <i class="fa-solid fa-file-contract mr-1"></i> Carga Obligatoria de Poder Autenticado (PDF) <span
+                    class="text-red-600">*</span>
                 </span>
                 <span class="text-[10px] text-amber-700">Máx: 5 MB</span>
               </div>
-              <input type="file" id="file-input-poder" accept=".pdf,application/pdf" class="block w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-700 file:text-white hover:file:bg-amber-800">
-              <p id="poder-file-name" class="text-[11px] text-emerald-700 mt-1 font-medium hidden">✓ Archivo cargado correctamente</p>
+              <input type="file" id="file-input-poder" accept=".pdf,application/pdf"
+                class="block w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-700 file:text-white hover:file:bg-amber-800">
+              <p id="poder-file-name" class="text-[11px] text-emerald-700 mt-1 font-medium hidden">✓ Archivo cargado
+                correctamente</p>
             </div>
 
             <!-- Declaración Formal de Solicitud de Desembargo -->
             <div class="declaracion-legal-box">
               <p class="font-serif text-slate-800 italic">
-                "Mayor de edad, obrando en mi calidad de <strong id="formal-txt-calidad" class="text-[#002855] font-sans font-bold">Solicitante directo / Propietario</strong>, identificado con Cédula de Ciudadanía No. <strong id="formal-txt-doc-desembargo" class="text-[#002855] font-mono font-bold">[Documento]</strong>, con este escrito solicito a su Despacho el levantamiento de la medida cautelar que pesa sobre el(los) siguiente(s) bien(es):"
+                "Mayor de edad, obrando en mi calidad de <strong id="formal-txt-calidad"
+                  class="text-[#002855] font-sans font-bold">Solicitante directo / Propietario</strong>, identificado
+                con Cédula de Ciudadanía No. <strong id="formal-txt-doc-desembargo"
+                  class="text-[#002855] font-mono font-bold">[Documento]</strong>, con este escrito solicito a su
+                Despacho el levantamiento de la medida cautelar que pesa sobre el(los) siguiente(s) bien(es):"
               </p>
             </div>
 
@@ -775,9 +879,11 @@
                     <i class="fa-solid fa-table-list text-[#005C8A]"></i>
                     Relación de Bienes Embargados Objeto de la Solicitud
                   </h4>
-                  <p class="text-[11px] text-slate-500">Agregue cada vehículo, inmueble, cuenta o salario sobre el que solicita el desembargo.</p>
+                  <p class="text-[11px] text-slate-500">Agregue cada vehículo, inmueble, cuenta o salario sobre el que
+                    solicita el desembargo.</p>
                 </div>
-                <button type="button" id="btn-add-bien" class="px-3 py-1.5 text-xs font-bold text-[#005C8A] bg-blue-50 border border-blue-300 hover:bg-blue-100 rounded-lg flex items-center gap-1.5 transition-all">
+                <button type="button" id="btn-add-bien"
+                  class="px-3 py-1.5 text-xs font-bold text-[#005C8A] bg-blue-50 border border-blue-300 hover:bg-blue-100 rounded-lg flex items-center gap-1.5 transition-all">
                   <i class="fa-solid fa-circle-plus"></i>
                   <span>+ Agregar otro bien</span>
                 </button>
@@ -790,7 +896,8 @@
                     <tr>
                       <th class="px-3 py-2.5 w-1/4">Bien Embargado <span class="text-red-500">*</span></th>
                       <th class="px-3 py-2.5 w-1/3">Identificación del Bien <span class="text-red-500">*</span></th>
-                      <th class="px-3 py-2.5 w-1/3">Ciudad de Registro o Empresa <span class="text-red-500">*</span></th>
+                      <th class="px-3 py-2.5 w-1/3">Ciudad de Registro o Empresa <span class="text-red-500">*</span>
+                      </th>
                       <th class="px-3 py-2.5 text-center w-12">Acción</th>
                     </tr>
                   </thead>
@@ -815,8 +922,10 @@
                   <label class="block text-xs font-semibold text-slate-800 mb-1">
                     1. Fotocopia de la cédula del propietario <span class="text-red-600">*</span>
                   </label>
-                  <input type="file" id="file-input-desembargo-cedula" accept=".pdf,image/jpeg,image/png" class="block w-full text-xs text-slate-500 file:mr-2 file:py-1 file:px-2.5 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-[#002855] file:text-white hover:file:bg-[#005C8A]">
-                  <p id="cedula-file-preview" class="text-[11px] text-emerald-700 mt-1 font-medium hidden">✓ Archivo cargado</p>
+                  <input type="file" id="file-input-desembargo-cedula" accept=".pdf,image/jpeg,image/png"
+                    class="block w-full text-xs text-slate-500 file:mr-2 file:py-1 file:px-2.5 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-[#002855] file:text-white hover:file:bg-[#005C8A]">
+                  <p id="cedula-file-preview" class="text-[11px] text-emerald-700 mt-1 font-medium hidden">✓ Archivo
+                    cargado</p>
                 </div>
 
                 <!-- Requisito 2: Volante de Pago -->
@@ -824,18 +933,23 @@
                   <label class="block text-xs font-semibold text-slate-800 mb-1">
                     2. Fotocopia del volante de pago cancelado <span class="text-red-600">*</span>
                   </label>
-                  <input type="file" id="file-input-desembargo-volante" accept=".pdf,image/jpeg,image/png" class="block w-full text-xs text-slate-500 file:mr-2 file:py-1 file:px-2.5 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-[#002855] file:text-white hover:file:bg-[#005C8A]">
-                  <p id="volante-file-preview" class="text-[11px] text-emerald-700 mt-1 font-medium hidden">✓ Archivo cargado</p>
+                  <input type="file" id="file-input-desembargo-volante" accept=".pdf,image/jpeg,image/png"
+                    class="block w-full text-xs text-slate-500 file:mr-2 file:py-1 file:px-2.5 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-[#002855] file:text-white hover:file:bg-[#005C8A]">
+                  <p id="volante-file-preview" class="text-[11px] text-emerald-700 mt-1 font-medium hidden">✓ Archivo
+                    cargado</p>
                 </div>
               </div>
             </div>
 
             <!-- Nota Informativa al Pie -->
-            <div class="p-3 rounded-lg bg-blue-50 border border-blue-200 flex items-start gap-2.5 text-xs text-blue-900">
+            <div
+              class="p-3 rounded-lg bg-blue-50 border border-blue-200 flex items-start gap-2.5 text-xs text-blue-900">
               <i class="fa-solid fa-circle-info text-[#005C8A] mt-0.5 text-sm"></i>
               <p>
-                <strong>Término de respuesta institucional:</strong> Pasados 15 días hábiles de la presente solicitud, usted podrá consultar el estado del desembargo ingresando con su número de documento a la URL oficial:
-                <a href="https://www.movilidadbogota.gov.co" target="_blank" class="underline font-semibold text-[#005C8A]">www.movilidadbogota.gov.co</a>.
+                <strong>Término de respuesta institucional:</strong> Pasados 15 días hábiles de la presente solicitud,
+                usted podrá consultar el estado del desembargo ingresando con su número de documento a la URL oficial:
+                <a href="https://www.movilidadbogota.gov.co" target="_blank"
+                  class="underline font-semibold text-[#005C8A]">www.movilidadbogota.gov.co</a>.
               </p>
             </div>
           </div>
@@ -843,15 +957,18 @@
           <!-- --------------------------------------------------------------
                2. TRÁMITE 2: ENTREGA DE TÍTULO DE DEPÓSITO JUDICIAL
                -------------------------------------------------------------- -->
-          <div id="bloque-tramite-entrega" class="hidden p-5 rounded-xl border border-slate-200 bg-white space-y-5 shadow-sm">
+          <div id="bloque-tramite-entrega"
+            class="hidden p-5 rounded-xl border border-slate-200 bg-white space-y-5 shadow-sm">
             <div class="border-b border-slate-200 pb-3 flex flex-wrap items-center justify-between gap-2">
               <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded-full bg-[#005C8A] text-white flex items-center justify-center text-xs font-bold">2</span>
+                <span
+                  class="w-6 h-6 rounded-full bg-[#005C8A] text-white flex items-center justify-center text-xs font-bold">2</span>
                 <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide">
                   Solicitud Entrega de Título de Depósito Judicial
                 </h3>
               </div>
-              <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+              <span
+                class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
                 Devolución de Título
               </span>
             </div>
@@ -859,7 +976,9 @@
             <!-- Declaración Formal de Entrega de Título -->
             <div class="declaracion-legal-box">
               <p class="font-serif text-slate-800 italic">
-                "Mayor de edad, identificado con Cédula de Ciudadanía No. <strong id="formal-txt-doc-entrega" class="text-[#002855] font-mono font-bold">[Documento]</strong>, solicito por medio de este escrito la <strong class="text-[#002855] font-sans font-bold">ENTREGA DEL TÍTULO DE DEPÓSITO JUDICIAL</strong>."
+                "Mayor de edad, identificado con Cédula de Ciudadanía No. <strong id="formal-txt-doc-entrega"
+                  class="text-[#002855] font-mono font-bold">[Documento]</strong>, solicito por medio de este escrito la
+                <strong class="text-[#002855] font-sans font-bold">ENTREGA DEL TÍTULO DE DEPÓSITO JUDICIAL</strong>."
               </p>
             </div>
 
@@ -868,40 +987,50 @@
                 <label for="entrega_num_deposito" class="block text-xs font-semibold text-slate-700 mb-1">
                   Número de Depósito Judicial / Consignación (si se conoce)
                 </label>
-                <input type="text" id="entrega_num_deposito" placeholder="Ej. 40010000000098234" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 border">
-                <p class="text-[11px] text-slate-400 mt-0.5">Número de título emitido por el Banco Agrario u otra entidad</p>
+                <input type="text" id="entrega_num_deposito" placeholder="Ej. 40010000000098234"
+                  class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 border">
+                <p class="text-[11px] text-slate-400 mt-0.5">Número de título emitido por el Banco Agrario u otra
+                  entidad</p>
               </div>
 
               <div>
                 <label for="entrega_entidad_origen" class="block text-xs font-semibold text-slate-700 mb-1">
                   Entidad Bancaria o Juzgado / Cuenta Origen <span class="text-red-600">*</span>
                 </label>
-                <input type="text" id="entrega_entidad_origen" placeholder="Ej. Banco Agrario de Colombia - Despacho de Coactiva" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 border">
+                <input type="text" id="entrega_entidad_origen"
+                  placeholder="Ej. Banco Agrario de Colombia - Despacho de Coactiva"
+                  class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 border">
               </div>
             </div>
 
             <!-- Carga Obligatoria: Soporte del Título -->
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
               <label class="block text-xs font-bold text-slate-800 uppercase tracking-wide">
-                <i class="fa-solid fa-file-pdf text-red-600 mr-1"></i> Carga Obligatoria del Soporte del Título o Recibo de Consignación <span class="text-red-600">*</span>
+                <i class="fa-solid fa-file-pdf text-red-600 mr-1"></i> Carga Obligatoria del Soporte del Título o Recibo
+                de Consignación <span class="text-red-600">*</span>
               </label>
-              <input type="file" id="file-input-entrega-soporte" accept=".pdf,application/pdf" class="block w-full text-xs text-slate-500 file:mr-2 file:py-1.5 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-[#002855] file:text-white hover:file:bg-[#005C8A]">
-              <p id="entrega-file-preview" class="text-[11px] text-emerald-700 font-medium hidden">✓ Documento PDF cargado correctamente</p>
+              <input type="file" id="file-input-entrega-soporte" accept=".pdf,application/pdf"
+                class="block w-full text-xs text-slate-500 file:mr-2 file:py-1.5 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-[#002855] file:text-white hover:file:bg-[#005C8A]">
+              <p id="entrega-file-preview" class="text-[11px] text-emerald-700 font-medium hidden">✓ Documento PDF
+                cargado correctamente</p>
             </div>
           </div>
 
           <!-- --------------------------------------------------------------
                3. TRÁMITE 3: APROPIACIÓN DE DEPÓSITO JUDICIAL
                -------------------------------------------------------------- -->
-          <div id="bloque-tramite-apropiacion" class="hidden p-5 rounded-xl border border-slate-200 bg-white space-y-5 shadow-sm">
+          <div id="bloque-tramite-apropiacion"
+            class="hidden p-5 rounded-xl border border-slate-200 bg-white space-y-5 shadow-sm">
             <div class="border-b border-slate-200 pb-3 flex flex-wrap items-center justify-between gap-2">
               <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded-full bg-amber-700 text-white flex items-center justify-center text-xs font-bold">3</span>
+                <span
+                  class="w-6 h-6 rounded-full bg-amber-700 text-white flex items-center justify-center text-xs font-bold">3</span>
                 <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide">
                   Solicitud de Apropiación de Depósito Judicial
                 </h3>
               </div>
-              <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
+              <span
+                class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
                 Aplicación de Valores
               </span>
             </div>
@@ -909,24 +1038,34 @@
             <!-- Declaración Formal de Apropiación -->
             <div class="declaracion-legal-box">
               <p class="font-serif text-slate-800 italic">
-                "Mayor de edad, identificado con Cédula de Ciudadanía No. <strong id="formal-txt-doc-apropiacion" class="text-[#002855] font-mono font-bold">[Documento]</strong>, autorizo por medio de este escrito la <strong class="text-[#002855] font-sans font-bold">APROPIACIÓN DEL DEPÓSITO JUDICIAL</strong> aportado al procedimiento de cobro, con el fin de satisfacer las obligaciones que adeudo a favor de la Secretaría Distrital de Movilidad."
+                "Mayor de edad, identificado con Cédula de Ciudadanía No. <strong id="formal-txt-doc-apropiacion"
+                  class="text-[#002855] font-mono font-bold">[Documento]</strong>, autorizo por medio de este escrito la
+                <strong class="text-[#002855] font-sans font-bold">APROPIACIÓN DEL DEPÓSITO JUDICIAL</strong> aportado
+                al procedimiento de cobro, con el fin de satisfacer las obligaciones que adeudo a favor de la Secretaría
+                Distrital de Movilidad."
               </p>
             </div>
 
             <div>
               <label for="apropiacion_obligaciones" class="block text-xs font-semibold text-slate-700 mb-1">
-                Obligación o Número(s) de Comparendo / Proceso Coactivo al que se aplicará el valor <span class="text-red-600">*</span>
+                Obligación o Número(s) de Comparendo / Proceso Coactivo al que se aplicará el valor <span
+                  class="text-red-600">*</span>
               </label>
-              <input type="text" id="apropiacion_obligaciones" placeholder="Ej. Comparendos N° 110010000000458129, 110010000000458130 / Proceso Coactivo 2024-CO-912" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 border">
+              <input type="text" id="apropiacion_obligaciones"
+                placeholder="Ej. Comparendos N° 110010000000458129, 110010000000458130 / Proceso Coactivo 2024-CO-912"
+                class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-[#005C8A] p-2.5 border">
             </div>
 
             <!-- Carga Obligatoria: Autorización y Soporte -->
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
               <label class="block text-xs font-bold text-slate-800 uppercase tracking-wide">
-                <i class="fa-solid fa-file-pdf text-red-600 mr-1"></i> Carga Obligatoria de Autorización y Soporte de Consignación <span class="text-red-600">*</span>
+                <i class="fa-solid fa-file-pdf text-red-600 mr-1"></i> Carga Obligatoria de Autorización y Soporte de
+                Consignación <span class="text-red-600">*</span>
               </label>
-              <input type="file" id="file-input-apropiacion-soporte" accept=".pdf,application/pdf" class="block w-full text-xs text-slate-500 file:mr-2 file:py-1.5 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-[#002855] file:text-white hover:file:bg-[#005C8A]">
-              <p id="apropiacion-file-preview" class="text-[11px] text-emerald-700 font-medium hidden">✓ Documento PDF cargado correctamente</p>
+              <input type="file" id="file-input-apropiacion-soporte" accept=".pdf,application/pdf"
+                class="block w-full text-xs text-slate-500 file:mr-2 file:py-1.5 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-[#002855] file:text-white hover:file:bg-[#005C8A]">
+              <p id="apropiacion-file-preview" class="text-[11px] text-emerald-700 font-medium hidden">✓ Documento PDF
+                cargado correctamente</p>
             </div>
           </div>
 
@@ -949,7 +1088,8 @@
               <label for="prescripcion_comparendo" class="block text-xs font-semibold text-slate-700 mb-1">
                 Número de Comparendo / Sanción <span class="text-red-600">*</span>
               </label>
-              <input type="text" id="prescripcion_comparendo" placeholder="Ej. 11001000000034928120" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-amber-600 p-2.5 border">
+              <input type="text" id="prescripcion_comparendo" placeholder="Ej. 11001000000034928120"
+                class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-amber-600 p-2.5 border">
               <p class="text-[11px] text-slate-400 mt-0.5">Identificador único del comparendo</p>
             </div>
 
@@ -957,7 +1097,8 @@
               <label for="prescripcion_fecha" class="block text-xs font-semibold text-slate-700 mb-1">
                 Fecha Estimada de la Infracción <span class="text-red-600">*</span>
               </label>
-              <input type="date" id="prescripcion_fecha" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-amber-600 p-2.5 border">
+              <input type="date" id="prescripcion_fecha"
+                class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-amber-600 p-2.5 border">
               <p class="text-[11px] text-slate-400 mt-0.5" id="prescripcion-antiguedad-msg">Fecha de ocurrencia</p>
             </div>
 
@@ -965,7 +1106,8 @@
               <label for="prescripcion_placa" class="block text-xs font-semibold text-slate-700 mb-1">
                 Placa del Vehículo Asociada <span class="text-red-600">*</span>
               </label>
-              <input type="text" id="prescripcion_placa" placeholder="Ej. ABC123" maxlength="7" class="w-full text-sm uppercase font-mono rounded-lg border-slate-300 shadow-sm focus:border-amber-600 p-2.5 border">
+              <input type="text" id="prescripcion_placa" placeholder="Ej. ABC123" maxlength="7"
+                class="w-full text-sm uppercase font-mono rounded-lg border-slate-300 shadow-sm focus:border-amber-600 p-2.5 border">
             </div>
           </div>
 
@@ -973,15 +1115,19 @@
             <label for="prescripcion_causal" class="block text-xs font-semibold text-slate-700 mb-1">
               Causal de Prescripción Alegada (Ley 769 de 2002 / CNT) <span class="text-red-600">*</span>
             </label>
-            <select id="prescripcion_causal" class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-amber-600 p-2.5 bg-white border">
+            <select id="prescripcion_causal"
+              class="w-full text-sm rounded-lg border-slate-300 shadow-sm focus:border-amber-600 p-2.5 bg-white border">
               <option value="" disabled selected>Seleccione el fundamento legal de la causal...</option>
-              <option value="Art. 159 CNT: Han transcurrido más de tres (3) años desde la ocurrencia de los hechos sin notificación de mandamiento de pago.">
+              <option
+                value="Art. 159 CNT: Han transcurrido más de tres (3) años desde la ocurrencia de los hechos sin notificación de mandamiento de pago.">
                 Art. 159 CNT: Más de tres (3) años desde la ocurrencia sin notificación del mandamiento de pago.
               </option>
-              <option value="Art. 159 CNT / CPACA: Han transcurrido más de cinco (5) años desde la notificación del mandamiento de pago sin culminación del cobro coactivo.">
+              <option
+                value="Art. 159 CNT / CPACA: Han transcurrido más de cinco (5) años desde la notificación del mandamiento de pago sin culminación del cobro coactivo.">
                 Art. 159 CNT / CPACA: Más de cinco (5) años desde la notificación de mandamiento sin ejecución efectiva.
               </option>
-              <option value="Art. 161 CNT: Caducidad de la acción contravencional (transcurrido más de un año sin celebración de audiencia/fallo).">
+              <option
+                value="Art. 161 CNT: Caducidad de la acción contravencional (transcurrido más de un año sin celebración de audiencia/fallo).">
                 Art. 161 CNT: Caducidad de la acción contravencional (más de un año sin audiencia sancionatoria).
               </option>
               <option value="Prescripción especial de títulos ejecutivos por inactividad procesal de la entidad">
@@ -993,10 +1139,13 @@
           <!-- Carga obligatoria para Prescripción (PDF) -->
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
             <label class="block text-xs font-bold text-slate-800 uppercase tracking-wide">
-              <i class="fa-solid fa-file-pdf text-red-600 mr-1"></i> Documento de Identidad y Pruebas Documentales (PDF) <span class="text-red-600">*</span>
+              <i class="fa-solid fa-file-pdf text-red-600 mr-1"></i> Documento de Identidad y Pruebas Documentales (PDF)
+              <span class="text-red-600">*</span>
             </label>
-            <input type="file" id="file-input-prescripcion" accept=".pdf,application/pdf" class="block w-full text-xs text-slate-500 file:mr-2 file:py-1.5 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-amber-800 file:text-white hover:file:bg-amber-900">
-            <p id="prescripcion-file-preview" class="text-[11px] text-emerald-700 font-medium hidden">✓ Archivo PDF cargado</p>
+            <input type="file" id="file-input-prescripcion" accept=".pdf,application/pdf"
+              class="block w-full text-xs text-slate-500 file:mr-2 file:py-1.5 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-amber-800 file:text-white hover:file:bg-amber-900">
+            <p id="prescripcion-file-preview" class="text-[11px] text-emerald-700 font-medium hidden">✓ Archivo PDF
+              cargado</p>
           </div>
         </div>
 
@@ -1006,18 +1155,20 @@
         <div class="pt-5 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div class="text-xs text-slate-500 flex items-center gap-1.5">
             <i class="fa-solid fa-shield-halved text-emerald-600 text-sm"></i>
-            <span>Oficio estructurado conforme a la minuta de Jurisdicción Coactiva.</span>
+            <span>Oficio estructurado conforme a la minuta de Direccion de gestión de cobro.</span>
           </div>
 
           <div class="flex flex-wrap items-center gap-3 w-full sm:w-auto">
             <!-- Botón 1: Generar Vista Previa del Oficio -->
-            <button type="button" id="btn-vista-previa-oficio" class="px-5 py-3.5 rounded-xl text-xs font-bold text-[#002855] bg-white border-2 border-[#002855] hover:bg-slate-100 shadow-sm flex items-center justify-center gap-2 transition-all w-full sm:w-auto">
+            <button type="button" id="btn-vista-previa-oficio"
+              class="px-5 py-3.5 rounded-xl text-xs font-bold text-[#002855] bg-white border-2 border-[#002855] hover:bg-slate-100 shadow-sm flex items-center justify-center gap-2 transition-all w-full sm:w-auto">
               <i class="fa-solid fa-file-lines text-sm text-[#005C8A]"></i>
               <span>Generar Vista Previa del Oficio</span>
             </button>
 
             <!-- Botón 2: Generar Radicación Oficial -->
-            <button type="button" id="btn-generar-radicacion" class="btn-sdm-accent px-7 py-3.5 rounded-xl text-xs font-bold shadow-md hover:shadow-lg flex items-center justify-center gap-2 transition-all w-full sm:w-auto">
+            <button type="button" id="btn-generar-radicacion"
+              class="btn-sdm-accent px-7 py-3.5 rounded-xl text-xs font-bold shadow-md hover:shadow-lg flex items-center justify-center gap-2 transition-all w-full sm:w-auto">
               <i class="fa-solid fa-paper-plane text-sm"></i>
               <span>Generar Radicación</span>
             </button>
@@ -1032,7 +1183,8 @@
   <!-- ====================================================================
        MODAL: VISTA PREVIA DEL OFICIO FORMAL DE COACTIVA
        ==================================================================== -->
-  <div id="modal-vista-previa-oficio" class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+  <div id="modal-vista-previa-oficio"
+    class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
     <div class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full border border-slate-200 overflow-hidden fade-in my-6">
       <!-- Encabezado de la Ventana Modal -->
       <div class="bg-[#002855] text-white px-6 py-4 flex items-center justify-between border-b border-slate-700">
@@ -1042,7 +1194,7 @@
           </div>
           <div>
             <h3 class="text-sm font-bold text-white">Vista Previa del Oficio Formal</h3>
-            <p class="text-[11px] text-slate-300">Subdirección de Jurisdicción Coactiva (Cra. 28A No. 17 A 20)</p>
+            <p class="text-[11px] text-slate-300">Direccion de gestión de cobro (Cra. 28A No. 17 A 20)</p>
           </div>
         </div>
         <button type="button" id="btn-close-preview-top" class="text-white/70 hover:text-white text-lg p-1">
@@ -1072,7 +1224,7 @@
           <!-- Destinatario Formal -->
           <div class="space-y-1 text-xs">
             <p class="font-semibold">Señores</p>
-            <p class="font-bold text-[#002855] uppercase">SUBDIRECCIÓN DE JURISDICCIÓN COACTIVA</p>
+            <p class="font-bold text-[#002855] uppercase">Direccion de gestión de cobro</p>
             <p class="font-semibold">SECRETARÍA DISTRITAL DE MOVILIDAD - BOGOTÁ</p>
             <p class="text-slate-600">Cra. 28A No. 17 A 20</p>
             <p class="text-slate-600">Bogotá D.C.</p>
@@ -1081,7 +1233,8 @@
           <!-- Asunto -->
           <div class="p-2.5 bg-slate-50 rounded border border-slate-200">
             <p class="font-bold text-[#002855]">
-              ASUNTO: <span id="preview-oficio-asunto" class="text-slate-900 font-normal uppercase">SOLICITUD ANTE JURISDICCIÓN COACTIVA</span>
+              ASUNTO: <span id="preview-oficio-asunto" class="text-slate-900 font-normal uppercase">SOLICITUD ANTE
+                Direccion de gestión de cobro</span>
             </p>
           </div>
 
@@ -1097,7 +1250,9 @@
               Constancia de Transparencia: Trámite 100% Gratuito y Directo
             </p>
             <p class="leading-relaxed">
-              La Secretaría Distrital de Movilidad certifica que este trámite es <strong>100% GRATUITO</strong> y no requiere intermediarios, cobradores ni tramitadores. Ninguna persona ajena a la entidad puede condicionar, acelerar o cobrar por las decisiones de la Subdirección de Jurisdicción Coactiva.
+              La Secretaría Distrital de Movilidad certifica que este trámite es <strong>100% GRATUITO</strong> y no
+              requiere intermediarios, cobradores ni tramitadores. Ninguna persona ajena a la entidad puede condicionar,
+              acelerar o cobrar por las decisiones de la Direccion de gestión de cobro.
             </p>
           </div>
 
@@ -1144,15 +1299,18 @@
 
       <!-- Pie del Modal con Acciones -->
       <div class="bg-slate-50 p-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
-        <button type="button" id="btn-close-preview-bottom" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-200 rounded-lg">
+        <button type="button" id="btn-close-preview-bottom"
+          class="px-4 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-200 rounded-lg">
           Cerrar Vista Previa
         </button>
         <div class="flex items-center gap-2">
-          <button type="button" id="btn-print-oficio" class="px-4 py-2 text-xs font-bold text-white bg-[#005C8A] hover:bg-[#002855] rounded-lg shadow-sm flex items-center gap-1.5 transition-all">
+          <button type="button" id="btn-print-oficio"
+            class="px-4 py-2 text-xs font-bold text-white bg-[#005C8A] hover:bg-[#002855] rounded-lg shadow-sm flex items-center gap-1.5 transition-all">
             <i class="fa-solid fa-print"></i>
             <span>Imprimir / Exportar a PDF</span>
           </button>
-          <button type="button" id="btn-proceder-radicar-desde-preview" class="btn-sdm-accent px-5 py-2 text-xs font-bold rounded-lg shadow-sm flex items-center gap-1.5">
+          <button type="button" id="btn-proceder-radicar-desde-preview"
+            class="btn-sdm-accent px-5 py-2 text-xs font-bold rounded-lg shadow-sm flex items-center gap-1.5">
             <i class="fa-solid fa-paper-plane"></i>
             <span>Proceder a Radicar</span>
           </button>
@@ -1164,7 +1322,8 @@
   <!-- ====================================================================
        MODAL INSTITUCIONAL DE CONFIRMACIÓN DE RADICACIÓN
        ==================================================================== -->
-  <div id="modal-radicacion" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+  <div id="modal-radicacion"
+    class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
     <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full border border-slate-200 overflow-hidden fade-in my-8">
       <!-- Encabezado Institucional del Modal -->
       <div class="bg-[#002855] text-white p-6 relative">
@@ -1174,7 +1333,8 @@
               <i class="fa-solid fa-circle-check text-2xl text-[#FDC300]"></i>
             </div>
             <div>
-              <p class="text-xs text-[#FDC300] font-bold tracking-widest uppercase">Secretaría Distrital de Movilidad</p>
+              <p class="text-xs text-[#FDC300] font-bold tracking-widest uppercase">Secretaría Distrital de Movilidad
+              </p>
               <h3 class="text-lg font-bold text-white">Constancia Oficial de Radicación Virtual</h3>
             </div>
           </div>
@@ -1184,14 +1344,16 @@
         </div>
 
         <!-- Banner de Radicado Oficial -->
-        <div class="mt-4 p-3 bg-white/10 rounded-xl border border-white/20 flex flex-wrap items-center justify-between gap-2">
+        <div
+          class="mt-4 p-3 bg-white/10 rounded-xl border border-white/20 flex flex-wrap items-center justify-between gap-2">
           <div>
             <p class="text-[11px] text-slate-300 uppercase tracking-wide font-medium">Número de Radicado Oficial</p>
             <p class="text-xl sm:text-2xl font-mono font-extrabold text-[#FDC300]" id="modal-radicado-code">
               SDM-2026-ER-000000
             </p>
           </div>
-          <button type="button" id="btn-copy-radicado" class="px-3 py-1.5 bg-white/20 hover:bg-white/30 text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all">
+          <button type="button" id="btn-copy-radicado"
+            class="px-3 py-1.5 bg-white/20 hover:bg-white/30 text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all">
             <i class="fa-regular fa-copy"></i>
             <span id="copy-btn-text">Copiar Radicado</span>
           </button>
@@ -1211,7 +1373,8 @@
 
         <!-- Tabla 1: Datos del Ciudadano -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
-          <div class="bg-slate-100 px-3 py-2 font-bold text-slate-800 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+          <div
+            class="bg-slate-100 px-3 py-2 font-bold text-slate-800 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
             <i class="fa-solid fa-user-check text-[#005C8A]"></i> Datos del Solicitante
           </div>
           <div class="divide-y divide-slate-100 p-1">
@@ -1238,10 +1401,12 @@
           </div>
         </div>
 
-        <!-- Tabla 2: Datos del Trámite de Jurisdicción Coactiva -->
+        <!-- Tabla 2: Datos del Trámite de Direccion de gestión de cobro -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
-          <div class="bg-slate-100 px-3 py-2 font-bold text-slate-800 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
-            <i class="fa-solid fa-folder-open text-[#005C8A]"></i> Trámites Radicados ante Coactiva (Cra. 28A No. 17 A 20)
+          <div
+            class="bg-slate-100 px-3 py-2 font-bold text-slate-800 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+            <i class="fa-solid fa-folder-open text-[#005C8A]"></i> Trámites Radicados ante Coactiva (Cra. 28A No. 17 A
+            20)
           </div>
           <div class="divide-y divide-slate-100 p-1" id="modal-resumen-tramite-container">
             <!-- Inyectado por JS -->
@@ -1250,7 +1415,8 @@
 
         <!-- Tabla 3: Listado de Anexos Digitales -->
         <div class="border border-slate-200 rounded-lg overflow-hidden">
-          <div class="bg-slate-100 px-3 py-2 font-bold text-slate-800 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+          <div
+            class="bg-slate-100 px-3 py-2 font-bold text-slate-800 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
             <i class="fa-solid fa-paperclip text-[#005C8A]"></i> Documentos y Soportes Anexos
           </div>
           <div class="p-3" id="modal-resumen-anexos-container">
@@ -1260,31 +1426,38 @@
 
         <!-- Nota Legal -->
         <p class="text-[11px] text-slate-500 italic bg-amber-50 p-2.5 rounded border border-amber-200">
-          * Pasados 15 días hábiles de la presente solicitud, usted podrá consultar el estado del desembargo y trámite de coactiva ingresando con su número de documento a la URL oficial www.movilidadbogota.gov.co.
+          * Pasados 15 días hábiles de la presente solicitud, usted podrá consultar el estado del desembargo y trámite
+          de coactiva ingresando con su número de documento a la URL oficial www.movilidadbogota.gov.co.
         </p>
 
         <!-- Declaración y Confirmación Ciudadana Anti-Intermediarios -->
         <div class="p-3.5 bg-blue-50/90 border border-blue-200 rounded-xl flex items-start gap-3">
-          <input type="checkbox" id="check-confirmacion-gratuito" checked class="w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A] mt-0.5 cursor-pointer">
-          <label for="check-confirmacion-gratuito" class="text-xs text-slate-800 leading-snug cursor-pointer select-none">
+          <input type="checkbox" id="check-confirmacion-gratuito" checked
+            class="w-4 h-4 text-[#005C8A] rounded border-slate-300 focus:ring-[#005C8A] mt-0.5 cursor-pointer">
+          <label for="check-confirmacion-gratuito"
+            class="text-xs text-slate-800 leading-snug cursor-pointer select-none">
             <strong class="text-[#002855]">Declaración Ciudadana de Trámite Directo:</strong>
-            Entiendo que este trámite es gratuito y que la radicación se realiza de manera directa ante la Secretaría Distrital de Movilidad, sin intervención de terceros cobradores o tramitadores.
+            Entiendo que este trámite es gratuito y que la radicación se realiza de manera directa ante la Secretaría
+            Distrital de Movilidad, sin intervención de terceros cobradores o tramitadores.
           </label>
         </div>
       </div>
 
       <!-- Pie del Modal con Acciones -->
       <div class="bg-slate-50 p-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
-        <button type="button" id="btn-nuevo-tramite" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-200 rounded-lg transition-all">
+        <button type="button" id="btn-nuevo-tramite"
+          class="px-4 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-200 rounded-lg transition-all">
           <i class="fa-solid fa-arrow-rotate-left mr-1"></i> Iniciar Nuevo Trámite
         </button>
 
         <div class="flex items-center gap-2">
-          <button type="button" id="btn-print-certificate" class="px-4 py-2 text-xs font-bold text-white bg-[#005C8A] hover:bg-[#002855] rounded-lg shadow-sm flex items-center gap-1.5 transition-all">
+          <button type="button" id="btn-print-certificate"
+            class="px-4 py-2 text-xs font-bold text-white bg-[#005C8A] hover:bg-[#002855] rounded-lg shadow-sm flex items-center gap-1.5 transition-all">
             <i class="fa-solid fa-print"></i>
             <span>Descargar Constancia</span>
           </button>
-          <button type="button" id="btn-modal-close-action" class="px-4 py-2 text-xs font-bold text-slate-700 bg-white border border-slate-300 hover:bg-slate-100 rounded-lg shadow-sm">
+          <button type="button" id="btn-modal-close-action"
+            class="px-4 py-2 text-xs font-bold text-slate-700 bg-white border border-slate-300 hover:bg-slate-100 rounded-lg shadow-sm">
             Cerrar
           </button>
         </div>
@@ -1303,31 +1476,39 @@
        CONTENEDOR 2: IMPRESIÓN DE LA CONSTANCIA DE RADICACIÓN (@media print)
        ==================================================================== -->
   <div id="print-certificate-container" style="display: none;">
-    <div style="border-bottom: 2px solid #002855; padding-bottom: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
+    <div
+      style="border-bottom: 2px solid #002855; padding-bottom: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
       <div>
         <h2 style="margin: 0; font-size: 16pt; font-weight: bold; color: #002855;">ALCALDÍA MAYOR DE BOGOTÁ D.C.</h2>
         <h3 style="margin: 0; font-size: 13pt; font-weight: 600; color: #005C8A;">SECRETARÍA DISTRITAL DE MOVILIDAD</h3>
-        <p style="margin: 4px 0 0 0; font-size: 10pt; color: #555;">Subdirección de Jurisdicción Coactiva (Cra. 28A No. 17 A 20)</p>
+        <p style="margin: 4px 0 0 0; font-size: 10pt; color: #555;">Direccion de gestión de cobro (Cra. 28A No.
+          17 A 20)</p>
       </div>
       <div style="text-align: right;">
         <div style="border: 2px solid #002855; padding: 6px 12px; border-radius: 4px; display: inline-block;">
           <p style="margin: 0; font-size: 8pt; font-weight: bold; color: #002855;">RADICADO OFICIAL</p>
-          <p id="print-radicado-code" style="margin: 0; font-size: 13pt; font-weight: bold; font-family: monospace;">SDM-2026-ER-000000</p>
+          <p id="print-radicado-code" style="margin: 0; font-size: 13pt; font-weight: bold; font-family: monospace;">
+            SDM-2026-ER-000000</p>
         </div>
       </div>
     </div>
 
     <div style="text-align: center; margin-bottom: 20px;">
-      <h3 style="margin: 0; font-size: 14pt; text-transform: uppercase; font-weight: bold;">Constancia Oficial de Radicación Virtual</h3>
-      <p style="margin: 2px 0 0 0; font-size: 9pt; color: #666;">Generada a través de la Ventanilla Única Virtual de Jurisdicción Coactiva</p>
+      <h3 style="margin: 0; font-size: 14pt; text-transform: uppercase; font-weight: bold;">Constancia Oficial de
+        Radicación Virtual</h3>
+      <p style="margin: 2px 0 0 0; font-size: 9pt; color: #666;">Generada a través de la Ventanilla Única Virtual de
+        Direccion de gestión de cobro</p>
     </div>
 
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 9.5pt;">
       <tr style="background-color: #f1f5f9;">
-        <th colspan="2" style="border: 1px solid #ccc; padding: 6px; text-align: left; font-weight: bold; color: #002855;">1. DATOS DEL SOLICITANTE</th>
+        <th colspan="2"
+          style="border: 1px solid #ccc; padding: 6px; text-align: left; font-weight: bold; color: #002855;">1. DATOS
+          DEL SOLICITANTE</th>
       </tr>
       <tr>
-        <td style="border: 1px solid #ccc; padding: 6px; width: 35%; font-weight: bold;">Nombre Completo / Razón Social:</td>
+        <td style="border: 1px solid #ccc; padding: 6px; width: 35%; font-weight: bold;">Nombre Completo / Razón Social:
+        </td>
         <td style="border: 1px solid #ccc; padding: 6px;" id="print-nombre">-</td>
       </tr>
       <tr>
@@ -1350,7 +1531,9 @@
 
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 9.5pt;">
       <tr style="background-color: #f1f5f9;">
-        <th colspan="2" style="border: 1px solid #ccc; padding: 6px; text-align: left; font-weight: bold; color: #002855;">2. INFORMACIÓN DEL TRÁMITE RADICADO</th>
+        <th colspan="2"
+          style="border: 1px solid #ccc; padding: 6px; text-align: left; font-weight: bold; color: #002855;">2.
+          INFORMACIÓN DEL TRÁMITE RADICADO</th>
       </tr>
       <tbody id="print-tramite-tbody">
         <!-- Inyectado para imprimir -->
@@ -1359,7 +1542,8 @@
 
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 9.5pt;">
       <tr style="background-color: #f1f5f9;">
-        <th style="border: 1px solid #ccc; padding: 6px; text-align: left; font-weight: bold; color: #002855;">3. DOCUMENTOS SOPORTES ANEXOS</th>
+        <th style="border: 1px solid #ccc; padding: 6px; text-align: left; font-weight: bold; color: #002855;">3.
+          DOCUMENTOS SOPORTES ANEXOS</th>
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;" id="print-anexos-td">
@@ -1368,9 +1552,14 @@
       </tr>
     </table>
 
-    <div style="font-size: 8.5pt; color: #444; border-top: 1px solid #ccc; padding-top: 10px; margin-top: 24px; text-align: justify;">
-      <p style="margin: 0 0 6px 0;"><strong>CERTIFICACIÓN LEGAL:</strong> La Secretaría Distrital de Movilidad de Bogotá certifica que el presente trámite ha sido radicado virtualmente a través de los sistemas oficiales, en cumplimiento del artículo 54 de la Ley 1437 de 2011 (CPACA) y la Ley 527 de 1999 sobre comercio electrónico y mensajes de datos.</p>
-      <p style="margin: 0; font-family: monospace; font-size: 7.5pt; color: #666;">Firma Electrónica / Sello Digital: SHA256-SDM-BOGOTA-CERT-VALID-2026-COBRO-COACTIVO</p>
+    <div
+      style="font-size: 8.5pt; color: #444; border-top: 1px solid #ccc; padding-top: 10px; margin-top: 24px; text-align: justify;">
+      <p style="margin: 0 0 6px 0;"><strong>CERTIFICACIÓN LEGAL:</strong> La Secretaría Distrital de Movilidad de Bogotá
+        certifica que el presente trámite ha sido radicado virtualmente a través de los sistemas oficiales, en
+        cumplimiento del artículo 54 de la Ley 1437 de 2011 (CPACA) y la Ley 527 de 1999 sobre comercio electrónico y
+        mensajes de datos.</p>
+      <p style="margin: 0; font-family: monospace; font-size: 7.5pt; color: #666;">Firma Electrónica / Sello Digital:
+        SHA256-SDM-BOGOTA-CERT-VALID-2026-COBRO-COACTIVO</p>
     </div>
   </div>
 
@@ -1383,7 +1572,7 @@
             <span class="text-sm font-bold text-[#FDC300]">Secretaría Distrital de Movilidad</span>
           </div>
           <p class="text-slate-300 mb-2 leading-relaxed">
-            Sede Jurisdicción Coactiva: Carrera 28A No. 17 A 20, Bogotá D.C.<br>
+            Sede Direccion de gestión de cobro: Carrera 28A No. 17 A 20, Bogotá D.C.<br>
             Sede principal: Calle 13 # 37 - 35, Bogotá D.C.<br>
             Horario de atención: Lunes a Viernes 7:00 a.m. a 5:00 p.m.
           </p>
@@ -1401,14 +1590,17 @@
         <div>
           <p class="text-sm font-bold text-[#FDC300] mb-3">Marco Legal y Protección de Datos</p>
           <p class="text-slate-300 leading-relaxed text-[11px]">
-            El tratamiento de datos personales aquí consignados se realiza bajo los principios de la Ley Estatutaria 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia.
+            El tratamiento de datos personales aquí consignados se realiza bajo los principios de la Ley Estatutaria
+            1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia.
           </p>
         </div>
       </div>
 
       <div class="pt-4 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-2">
-        <p>© 2026 Alcaldía Mayor de Bogotá D.C. - Subdirección de Jurisdicción Coactiva. Todos los derechos reservados.</p>
-        <p class="font-medium text-slate-300">Prototipo Funcional de Radicación SPA v2.0.0 (Formato Oficial Coactiva)</p>
+        <p>© 2026 Alcaldía Mayor de Bogotá D.C. - Direccion de gestión de cobro. Todos los derechos reservados.
+        </p>
+        <p class="font-medium text-slate-300">Prototipo Funcional de Radicación SPA v2.0.0 (Formato Oficial Coactiva)
+        </p>
       </div>
     </div>
   </footer>
@@ -1416,4 +1608,5 @@
   <!-- Script Principal de la Aplicación -->
   <script src="app.js"></script>
 </body>
+
 </html>
